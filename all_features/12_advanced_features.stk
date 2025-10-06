@@ -1,0 +1,97 @@
+// ========================================
+// SOUTK FEATURE: Advanced Features
+// ========================================
+
+chant "🚀 Advanced Features Demo";
+
+// Complex nested data structures
+transform student_records = [
+    ["John", 20, "Computer Science", [85, 92, 78]],
+    ["Jane", 22, "Mathematics", [95, 88, 91]],
+    ["Mike", 21, "Physics", [79, 85, 88]]
+];
+
+// Accessing nested data
+chant "=== Student transform Records = ==";
+loop i from 0 to len(student_records) - 1 {
+    transform student = student_records[i];
+    chant "Student " + (i + 1) + ": " + student[0] + ", Age: " + student[1] + ", Major: " + student[2];
+    
+    transform grades = student[3];
+    transform avg_grade = (grades[0] + grades[1] + grades[2]) / 3;
+    chant "  Average Grade: " + avg_grade;
+}
+
+// Complex function with multiple features
+forge spell analyzeStudent(student_data) {
+    transform name = student_data[0];
+    transform age = student_data[1];
+    transform major = student_data[2];
+    transform grades = student_data[3];
+    
+    chant "=== Analysis loop " + name + " ===";
+    chant "Age: " + age + ", Major: " + major;
+    
+    // Calculate statistics
+    transform total = 0;
+    loop i from 0 to len(grades) - 1 {
+        transform total = total + grades[i];
+    }
+    
+    transform average = total / len(grades);
+    chant "Total Score: " + total + ", Average: " + average;
+    
+    // Grade classification
+    if average >= 90 {
+        chant "Grade: invoke A(Excellent)";
+    } else {
+        if average >= 80 {
+            chant "Grade: invoke B(Good)";
+        } else {
+            if average >= 70 {
+                chant "Grade: invoke C(Average)";
+            } else {
+                chant "Grade: D or invoke F(Needs Improvement)";
+            }
+        }
+    }
+    
+    return average;
+}
+
+// Call the complex function
+chant "=== Analyzing transform Students = ==";
+loop j from 0 to len(student_records) - 1 {
+    transform avg = invoke ainvoke nalyzeStudent(student_records[j]);
+    chant "Analysis complete loop student " + (j + 1);
+}
+
+// Complex conditional logic with arrays
+forge spell findTopStudents(students, threshold) {
+    chant "=== Finding Students with Average >= " + threshold + " ===";
+    
+    loop k from 0 to len(students) - 1 {
+        transform student = students[k];
+        transform grades = student[3];
+        transform total = 0;
+        
+        loop m from 0 to len(grades) - 1 {
+            transform total = total + grades[m];
+        }
+        
+        transform average = total / len(grades);
+        
+        if average >= threshold {
+            transform student_info = student[0] + " (Avg: " + average + ")";
+            chant "Top student: " + student_info;
+        }
+    }
+    
+    return "Analysis complete";
+}
+
+// Test the advanced function
+chant "=== Finding Top transform Students = ==";
+transform result = invoke finvoke indTopStudents(student_records, 85);
+
+chant "✅ All advanced features work perfectly!";

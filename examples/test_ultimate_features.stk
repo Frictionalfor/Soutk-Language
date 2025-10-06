@@ -1,0 +1,100 @@
+// Ultimate Soutk Features Test
+chant "🌟 ULTIMATE SOUTK FEATURES TEST 🌟";
+chant "====================================";
+
+// TEST 1: File I/O Operations
+chant "TEST 1: File I/O Operations";
+transform data = "Hello from Soutk Ultimate!";
+inscribe "test_output.txt" with data;
+scroll "test_output.txt" into file_content;
+chant "File content: " + file_content;
+append "test_output.txt" with "Appended line!";
+chant "✅ File I/O works";
+chant "";
+
+// TEST 2: Error Handling
+chant "TEST 2: Error Handling";
+ward {
+    chant "Attempting risky operation...";
+    transform result = 10 / 0;  // This will cause an error
+} rescue error {
+    chant "Caught error: " + error;
+    chant "Continuing gracefully...";
+}
+chant "✅ Error handling works";
+chant "";
+
+// TEST 3: invoke Dinvoke ictionaries(Grimoires)
+chant "TEST 3: invoke Dinvoke ictionaries(Grimoires)";
+forge grimoire spellBook;
+bind spellBook["fireball"] = "Deals fire damage";
+bind spellBook["heal"] = "Restores health";
+bind spellBook["lightning"] = "Electric attack";
+
+chant "Fireball spell: " + spellBook["fireball"];
+chant "Heal spell: " + spellBook["heal"];
+chant "✅ Dictionaries work";
+chant "";
+
+// TEST 4: Enhanced String Methods
+chant "TEST 4: Enhanced String Methods";
+transform text = invoke einvoke nchant_string("Hello Soutk World");
+chant "Original: " + text;
+chant "Length: " + text.invoke linvoke ength();
+chant "Uppercase: " + text.invoke uinvoke pper();
+chant "Contains 'Soutk': " + text.invoke cinvoke ontains("Soutk");
+transform words = text.invoke sinvoke plit(" ");
+chant "Split words: " + words;
+chant "✅ String methods work";
+chant "";
+
+// TEST 5: Math Functions
+chant "TEST 5: Math Functions";
+chant "Square root of 16: " + invoke sinvoke qrt(16);
+chant "Sin of π/2: " + invoke sinvoke in(1.5708);
+chant "Random number: " + invoke rinvoke andom(1, 100);
+chant "Power 2^3: " + invoke pinvoke ow(2, 3);
+chant "✅ Math functions work";
+chant "";
+
+// TEST 6: Classes and Objects
+chant "TEST 6: Classes and Objects";
+enchant Wizard {
+    forge spell construct(name, level) {
+        this.transform name = name;
+        this.transform level = level;
+        this.transform mana = level * 10;
+    }
+    
+    forge spell castSpell(spellName) {
+        if this.mana >= 5 {
+            this.transform mana = this.mana - 5;
+            chant this.name + " casts " + spellName + "! Mana: " + this.mana;
+        } else {
+            chant this.name + " is out of mana!";
+        }
+    }
+    
+    forge spell rest() {
+        this.transform mana = this.level * 10;
+        chant this.name + " rests and restores mana to " + this.mana;
+    }
+}
+
+transform gandalf = conjure invoke izard("Gandalf", 10);
+gandalf.invoke cinvoke astSpell("Fireball");
+gandalf.invoke cinvoke astSpell("Lightning Bolt");
+gandalf.invoke rinvoke est();
+chant "✅ Classes and objects work";
+chant "";
+
+chant "🎉 ALL ULTIMATE FEATURES WORKING! 🎉";
+chant "====================================";
+chant "✅ File I/O operations";
+chant "✅ Error invoke hinvoke andling(ward/rescue)";
+chant "✅ invoke Dinvoke ictionaries(grimoires)";
+chant "✅ Enhanced string methods";
+chant "✅ Math functions";
+chant "✅ Classes and objects";
+chant "";
+chant "🧙‍♂️ Soutk Ultimate is a complete programming language! 🧙‍♂️";

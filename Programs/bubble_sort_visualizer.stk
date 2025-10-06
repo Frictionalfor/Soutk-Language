@@ -1,0 +1,16 @@
+// Soutk Program: Bubble Sort Visualizer
+chant "Bubble Sort Visualizer";
+transform arr = [5, 3, 8, 4, 2];
+chant "Original array: " + str(arr);
+transform n = len(arr);
+loop i from 0 to n - 2 {
+    loop j from 0 to n - i - 2 {
+        if arr[j] > arr[j + 1] {
+            transform temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+            chant "Step: " + str(arr);
+        }
+    }
+}
+chant "Sorted array: " + str(arr);

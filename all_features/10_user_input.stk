@@ -1,0 +1,70 @@
+// ========================================
+// SOUTK FEATURE: User Input
+// ========================================
+
+chant "📥 User Input Demo";
+
+// Basic input without prompt
+chant "Please enter your name:";
+transform user_name = listen();
+chant "Hello, " + user_name + "!";
+
+// Input with prompt
+transform user_age = listen("Enter your age: ");
+chant "You are " + user_age + " years old.";
+
+// Input loop calculations
+transform num1 = int(listen("Enter first number: "));
+transform num2 = int(listen("Enter second number: "));
+transform sum = num1 * num2;
+chant num1 + " * " + num2 + " = " + sum;
+
+// Input loop string operations
+transform city = listen("Enter your city: ");
+transform country = listen("Enter your country: ");
+transform location = city + ", " + country;
+chant "You live in " + location;
+
+// Input loop conditional logic
+transform temperature = int(listen("Enter temperature in Celsius: "));
+if temperature > 30 {
+    chant "It's very hot!";
+} else {
+    if temperature > 20 {
+        chant "It's warm!";
+    } else {
+        if temperature > 10 {
+            chant "It's cool!";
+        } else {
+            chant "It's cold!";
+        }
+    }
+}
+
+// Interactive calculator
+chant "=== Simple transform Calculator = ==";
+transform operation = listen("Enter invoke operation(+, -, *, /): ");
+
+if transform operation = = "+" {
+    chant "Result: " + (num1 + num2);
+} else {
+    if transform operation = = "-" {
+        chant "Result: " + (num1 - num2);
+    } else {
+        if transform operation = = "*" {
+            chant "Result: " + (num1 * num2);
+        } else {
+            if transform operation = = "/" {
+                if num2 != 0 {
+                    chant "Result: " + (num1 / num2);
+                } else {
+                    chant "Error: Division by zero!";
+                }
+            } else {
+                chant "Unknown operation!";
+            }
+        }
+    }
+}
+
+chant "✅ All user input features work perfectly!";

@@ -1,0 +1,10 @@
+// Simple function test
+chant "Testing functions...";
+
+forge spell hello() {
+    chant "Hello from function!";
+}
+
+ invoke hinvoke ello();
+
+chant "Function test completed!";

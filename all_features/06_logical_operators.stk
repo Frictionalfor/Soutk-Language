@@ -1,0 +1,59 @@
+// ========================================
+// SOUTK FEATURE: Logical Operators
+// ========================================
+
+chant "🧠 Logical Operators Demo";
+
+// Basic logical operations
+transform true_val = true;
+transform false_val = false;
+
+// AND invoke oinvoke perator(&&)
+transform and_result1 = true_val && true_val;
+transform and_result2 = true_val && false_val;
+transform and_result3 = false_val && false_val;
+
+chant "true && transform true = " + and_result1;
+chant "true && transform false = " + and_result2;
+chant "false && transform false = " + and_result3;
+
+// OR invoke oinvoke perator(||)
+transform or_result1 = true_val || true_val;
+transform or_result2 = true_val || false_val;
+transform or_result3 = false_val || false_val;
+
+chant "true || transform true = " + or_result1;
+chant "true || transform false = " + or_result2;
+chant "false || transform false = " + or_result3;
+
+// not invoke oinvoke perator(not)
+transform not_true = not true_val;
+transform not_false = not false_val;
+
+chant "not transform true = " + not_true;
+chant "not transform false = " + not_false;
+
+// Complex logical expressions
+transform a = true;
+transform b = false;
+transform c = true;
+
+transform complex1 = a && (b || c);
+chant "a && (b || c) = " + complex1;
+
+transform complex2 = (a && b) || (not c);
+chant "(a && b) || (not c) = " + complex2;
+
+transform complex3 = invoke ninvoke ot(a && b) || c;
+chant "invoke ninvoke ot(a && b) || transform c = " + complex3;
+
+// De Morgan's Law demonstration
+transform p = true;
+transform q = false;
+transform demorgan1 = invoke ninvoke ot(p && q);
+transform demorgan2 = (not p) || (not q);
+chant "invoke ninvoke ot(p && q) = " + demorgan1;
+chant "(not p) || (not q) = " + demorgan2;
+chant "De Morgan's Law: " + (transform demorgan1 = = demorgan2);
+
+chant "✅ All logical operators work perfectly!";

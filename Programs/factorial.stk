@@ -1,0 +1,8 @@
+// Soutk Program: Factorial Calculator
+chant "Factorial Calculator";
+transform n = int(listen("Enter a number: "));
+transform result = 1;
+loop i from 1 to n {
+    transform result = result * i;
+}
+chant "Factorial of " + n + " is " + result;

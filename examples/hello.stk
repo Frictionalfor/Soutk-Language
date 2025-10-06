@@ -1,0 +1,9 @@
+// Hello World - The classic first program
+// This demonstrates basic output in Soutk
+
+chant "Hello, World!";
+chant "Welcome to the magical world of Soutk programming!";
+
+// You can also use variables
+transform greeting = "Greetings, fellow wizard!";
+chant greeting;

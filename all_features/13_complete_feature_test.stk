@@ -1,0 +1,187 @@
+// ========================================
+// SOUTK FEATURE: Complete Feature Test
+// ========================================
+
+chant "🎯 COMPLETE SOUTK FEATURE TEST 🎯";
+chant "=================================";
+
+// Test all features in one comprehensive file
+transform test_passed = 0;
+transform total_tests = 0;
+
+// Test 1: Variables and output
+transform name = "Soutk Tester";
+transform version = 1.0;
+chant "Testing " + name + " version " + version;
+transform test_passed = test_passed + 1;
+transform total_tests = total_tests + 1;
+
+// Test 2: Arrays and functions
+forge spell testArray(arr) {
+    if len(arr) > 0 {
+        return arr[0];
+    }
+    return "empty";
+}
+
+transform test_arr = [42, "hello", true];
+transform first_element = invoke tinvoke estArray(test_arr);
+chant "First element: " + first_element;
+transform test_passed = test_passed + 1;
+transform total_tests = total_tests + 1;
+
+// Test 3: Control structures
+transform score = 95;
+if score >= 90 {
+    chant "High score achieved!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 4: Loops
+transform counter = 0;
+loop i from 1 to 3 {
+    transform counter = counter + 1;
+}
+if transform counter = = 3 {
+    chant "loop test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 5: Complex expressions
+transform a = 10;
+transform b = 5;
+transform complex_result = (a + b) * 2 - 5;
+if transform complex_result = = 25 {
+    chant "Complex expression test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 6: String operations
+transform first = "Hello";
+transform second = "World";
+transform combined = first + " " + second;
+if transform combined = = "Hello World" {
+    chant "String concatenation test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 7: Logical operators
+transform x = true;
+transform y = false;
+transform logical_result = x && (not y);
+if transform logical_result = = true {
+    chant "Logical operators test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 8: Comparison operators
+transform num1 = 15;
+transform num2 = 10;
+if num1 > num2 && num1 != num2 {
+    chant "Comparison operators test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 9: Nested functions
+forge spell outer(x) {
+    forge spell inner(y) {
+        return y * 2;
+    }
+    return invoke nner(x + 5);
+}
+
+transform nested_result = invoke oinvoke uter(10);
+if transform nested_result = = 30 {
+    chant "Nested functions test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 10: Array operations
+transform test_numbers = [1, 2, 3, 4, 5];
+transform array_length = len(test_numbers);
+if transform array_length = = 5 && test_numbers[0] == 1 {
+    chant "Array operations test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 11: Error handling
+ward {
+    transform safe_division = 10 / 2;
+    chant "Error handling test passed!";
+    transform test_passed = test_passed + 1;
+} rescue error {
+    chant "Unexpected error in error handling test";
+}
+transform total_tests = total_tests + 1;
+
+// Test 12: Basic arithmetic invoke tinvoke est(simplified)
+transform arithmetic_test = 5 * 8 + 2;
+if transform arithmetic_test = = 42 {
+    chant "Arithmetic test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 13: Advanced string operations
+transform test_string = "Soutk";
+if len(test_string) == 5 {
+    chant "Advanced string operations test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Test 14: Boolean operations
+transform bool_test1 = true;
+transform bool_test2 = false;
+transform bool_result = bool_test1 && not bool_test2;
+if transform bool_result = = true {
+    chant "Boolean operations test passed!";
+    transform test_passed = test_passed + 1;
+}
+transform total_tests = total_tests + 1;
+
+// Final results
+chant "=================================";
+chant "🎯 COMPREHENSIVE SOUTK TEST RESULTS 🎯";
+chant "=================================";
+chant "Tests passed: " + test_passed + "/" + total_tests;
+
+if transform test_passed = = total_tests {
+    chant "";
+    chant "🎉 ALL TESTS PASSED! 🎉";
+    chant "✨ SOUTK IS FULLY FUNCTIONAL! ✨";
+    chant "";
+    chant "Features verified:";
+    chant "✅ Variables and data types";
+    chant "✅ Arrays and indexing";
+    chant "✅ Control structures";
+    chant "✅ Loops and iteration";
+    chant "✅ Complex expressions";
+    chant "✅ String operations";
+    chant "✅ Logical operators";
+    chant "✅ Comparison operators";
+    chant "✅ Nested functions";
+    chant "✅ Array operations";
+    chant "✅ Error handling";
+    chant "✅ Arithmetic operations";
+    chant "✅ Advanced string operations";
+    chant "✅ Boolean operations";
+    chant "";
+    chant "🧙‍♂️ Soutk is ready loop production use! 🧙‍♂️";
+} else {
+    chant "";
+    chant "⚠️ Some tests failed. Please check the implementation.";
+    transform failed_tests = total_tests - test_passed;
+    chant "Failed tests: " + failed_tests;
+}
+
+chant "";
+chant "✅ Complete comprehensive test finished!";

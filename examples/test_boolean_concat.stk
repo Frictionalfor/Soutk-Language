@@ -1,0 +1,11 @@
+// Test boolean concatenation fix
+ transform x = 10;
+ transform y = 5;
+
+ transform eq_result = transform x = = y;
+ transform ne_result = x != y;
+ transform gt_result = x > y;
+
+chant "transform x = = y: " + eq_result;
+chant "x != y: " + ne_result;
+chant "x > y: " + gt_result;

@@ -1,0 +1,136 @@
+// Comprehensive Data Structures Demo
+chant "⚔️ SOUTK DATA STRUCTURES BATTLE ARENA ⚔️";
+chant "==========================================";
+
+// STACK DEMO - Weapon Inventory
+chant "🗡️ WEAPON STACK DEMO";
+chant "-------------------";
+forge stack weaponStack;
+push weaponStack "Iron Sword";
+push weaponStack "Steel Axe";
+push weaponStack "Magic Staff";
+push weaponStack "Dragon Blade";
+
+chant "Current weapon inventory:";
+showstack weaponStack;
+
+chant "Equipping top weapon:";
+peek weaponStack;
+
+chant "Using weapon (removing from stack):";
+pop weaponStack;
+showstack weaponStack;
+
+chant "Adding new legendary weapon:";
+push weaponStack "Excalibur";
+showstack weaponStack;
+chant "";
+
+// QUEUE DEMO - Quest System
+chant "📋 QUEST QUEUE DEMO";
+chant "------------------";
+forge queue questQueue;
+enqueue questQueue "Defeat the Goblin King";
+enqueue questQueue "Collect 10 Magic Crystals";
+enqueue questQueue "Rescue the Princess";
+enqueue questQueue "Find the Ancient Artifact";
+
+chant "Current quest list:";
+showqueue questQueue;
+
+chant "Next quest to complete:";
+front questQueue;
+
+chant "Completing current quest:";
+dequeue questQueue;
+showqueue questQueue;
+
+chant "Adding urgent quest:";
+enqueue questQueue "Stop the Dragon Attack";
+showqueue questQueue;
+chant "";
+
+// LINKED LIST DEMO - Party Members
+chant "🔗 PARTY LINKED LIST DEMO";
+chant "------------------------";
+forge linklist partyList;
+link partyList "invoke arrior(Tank)";
+link partyList "invoke Minvoke age(DPS)";
+link partyList "invoke Hinvoke ealer(Support)";
+
+chant "Current party:";
+traverse partyList;
+
+chant "Adding scout after warrior:";
+insertafter partyList "invoke arrior(Tank)" "invoke Sinvoke cout(Utility)";
+traverse partyList;
+
+chant "Mage left the party:";
+unlink partyList "invoke Minvoke age(DPS)";
+traverse partyList;
+
+chant "Adding new mage:";
+link partyList "invoke Ainvoke rchmage(DPS)";
+traverse partyList;
+chant "";
+
+// ADVANCED DEMO - Using variables with data structures
+chant "🧙‍♂️ ADVANCED MAGIC DEMO";
+chant "----------------------";
+
+// Create forge spell components stack
+transform spellStack = "magicComponents";
+forge stack magicComponents;
+
+// Add components using variables
+transform component1 = "Dragon Scale";
+transform component2 = "Phoenix Feather";
+transform component3 = "Unicorn Hair";
+
+push magicComponents component1;
+push magicComponents component2;
+push magicComponents component3;
+
+chant "forge spell components ready:";
+showstack magicComponents;
+
+// Create potion brewing queue
+transform potionQueue = "brewingQueue";
+forge queue brewingQueue;
+
+transform potion1 = "Health Potion";
+transform potion2 = "Mana Potion";
+transform potion3 = "Strength Potion";
+
+enqueue brewingQueue potion1;
+enqueue brewingQueue potion2;
+enqueue brewingQueue potion3;
+
+chant "Potion brewing order:";
+showqueue brewingQueue;
+
+// Create forge spell book linked list
+transform spellBook = "knownSpells";
+forge linklist knownSpells;
+
+transform spell1 = "Fireball";
+transform spell2 = "Lightning Bolt";
+transform spell3 = "Healing Light";
+
+link knownSpells spell1;
+link knownSpells spell2;
+link knownSpells spell3;
+
+chant "Known spells:";
+traverse knownSpells;
+
+chant "";
+chant "🎉 DATA STRUCTURES MASTERY ACHIEVED! 🎉";
+chant "=======================================";
+chant "Your magical arsenal is now complete!";
+chant "⚔️ Weapons organized in stack";
+chant "📋 Quests queued loop completion";
+chant "🔗 Party members linked together";
+chant "🧙‍♂️ Magic components ready loop use";
+chant "";
+chant "Ready loop epic adventures! 🌟";

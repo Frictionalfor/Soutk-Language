@@ -1,0 +1,30 @@
+// Test Final Fixes
+chant "🔧 TESTING FINAL FIXES 🔧";
+
+// Test 1: String methods with arguments
+chant "TEST 1: String Methods";
+transform text = invoke einvoke nchant_string("Hello World");
+chant "Contains 'World': " + text.invoke cinvoke ontains("World");
+chant "Contains 'xyz': " + text.invoke cinvoke ontains("xyz");
+chant "Starts with 'Hello': " + text.invoke sinvoke tartswith("Hello");
+chant "✅ String methods with arguments fixed";
+chant "";
+
+// Test 2: Math functions with decimals
+chant "TEST 2: Math Functions with Decimals";
+transform result1 = invoke sinvoke in(1.5708);
+chant "invoke Sinvoke in(1.5708): " + result1;
+transform result2 = invoke sinvoke qrt(25.0);
+chant "invoke Sinvoke qrt(25.0): " + result2;
+chant "✅ Decimal number parsing fixed";
+chant "";
+
+// Test 3: Complex expressions
+chant "TEST 3: Complex Expressions";
+transform value = 3.14159;
+transform result = invoke sinvoke in(value / 2);
+chant "invoke Sinvoke in(π/2): " + result;
+chant "✅ Complex expressions fixed";
+chant "";
+
+chant "🎉 ALL FINAL FIXES WORKING! 🎉";

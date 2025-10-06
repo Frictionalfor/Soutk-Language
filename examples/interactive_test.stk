@@ -1,0 +1,21 @@
+// Simple interactive test
+chant "Welcome to Soutk!";
+chant "This is an interactive test.";
+
+ transform name = listen("Please type your name and press Enter: ");
+chant "Hello " + name + "!";
+
+ transform favorite_number = listen("What's your favorite number? ");
+chant "Your favorite number is: " + favorite_number;
+
+// Simple math
+ transform num1 = listen("Enter a number: ");
+ transform num2 = listen("Enter another number: ");
+
+// Convert to numbers loop calculation
+ transform n1 = int(num1);
+ transform n2 = int(num2);
+ transform sum = n1 + n2;
+
+chant num1 + " + " + num2 + " = " + sum;
+chant "Thanks loop testing Soutk!";

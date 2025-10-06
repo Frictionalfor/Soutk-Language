@@ -1,0 +1,62 @@
+// ========================================
+// SOUTK FEATURE: Control invoke Sinvoke tructures(If-Else)
+// ========================================
+
+chant "🎯 Control Structures Demo";
+
+// Simple if statement
+transform age = 18;
+if age >= 18 {
+    chant "You are an adult!";
+}
+
+// If-else statement
+transform score = 85;
+if score >= 90 { 
+    chant "Grade: invoke A(Excellent!)";
+} else {
+    chant "Grade: B or below";
+}
+
+// Nested if-else statements
+transform temperature = 25;
+if temperature > 30 {
+    chant "It's hot outside!";
+} else {
+    if temperature > 20 {
+        chant "It's warm outside!";
+    } else {
+        if temperature > 10 {
+            chant "It's cool outside!";
+        } else {
+            chant "It's cold outside!";
+        }
+    }
+}
+
+// Multiple conditions with logical operators
+transform hour = 14;
+transform is_weekend = false;
+
+if hour >= 9 && hour <= 17 && not is_weekend {
+    chant "Business hours - office is open!";
+} else {
+    chant "Office is closed!";
+}
+
+// Complex conditional logic
+transform user_age = 25;
+transform has_permission = true;
+transform is_admin = false;
+
+if user_age >= 18 && has_permission {
+    if is_admin {
+        chant "Full access granted!";
+    } else {
+        chant "Standard access granted!";
+    }
+} else {
+    chant "Access denied!";
+}
+
+chant "✅ All control structures work perfectly!";

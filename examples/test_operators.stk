@@ -1,0 +1,28 @@
+// Test logical and relational operators
+chant "Testing operators:";
+
+ transform a = 10;
+ transform b = 5;
+
+chant "transform a = " + a;
+chant "transform b = " + b;
+
+// Test relational operators
+ transform test1 = a > b;
+chant "a > b result: " + test1;
+
+ transform test2 = a < b;
+chant "a < b result: " + test2;
+
+ transform test3 = transform a = = b;
+chant "transform a = = b result: " + test3;
+
+// Test logical operators
+ transform true_val = true;
+ transform false_val = false;
+
+ transform and_test = true_val && false_val;
+chant "true && false result: " + and_test;
+
+ transform or_test = true_val || false_val;
+chant "true || false result: " + or_test;

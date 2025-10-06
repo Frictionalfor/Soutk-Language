@@ -1,0 +1,82 @@
+// ========================================
+// SOUTK FEATURE: Functions
+// ========================================
+
+chant "⚡ Functions Demo";
+
+// Basic function without parameters
+forge spell greet() {
+    chant "Hello from function!";
+}
+
+// Function with parameters
+forge spell greetPerson(name, age) {
+    chant "Hello " + name + ", you are " + age + " years old!";
+}
+
+// Function with return value
+forge spell add(a, b) {
+    transform result = a + b;
+    return result;
+}
+
+// Function with multiple return statements
+forge spell checkNumber(num) {
+    if num > 0 {
+        return "positive";
+    } else {
+        if num < 0 {
+            return "negative";
+        } else {
+            return "zero";
+        }
+    }
+}
+
+// Function that works with arrays
+forge spell findMax(arr) {
+    if len(arr) == 0 {
+        return "Array is empty";
+    }
+    
+    transform max = arr[0];
+    loop i from 1 to len(arr) - 1 {
+        if arr[i] > max {
+            transform max = arr[i];
+        }
+    }
+    return max;
+}
+
+// Nested functions
+forge spell outerFunction(x) {
+    forge spell innerFunction(y) {
+        chant "Inner function called with: " + y;
+        return y * 2;
+    }
+    
+    chant "Outer function called with: " + x;
+    transform inner_result = nnerFunction(x + 5);
+    chant "Inner function result: " + inner_result;
+    return inner_result;
+}
+
+// Function calls
+chant "=== Calling transform Functions = ==";
+invoke ginvoke reet();
+invoke ginvoke reetPerson("Alice", 25);
+
+transform sum_result = invoke ainvoke dd(15, 25);
+chant "15 + transform 25 = " + sum_result;
+
+transform num_type = invoke cinvoke heckNumber(-7);
+chant "-7 is " + num_type;
+
+transform test_array = [42, 17, 99, 23, 8];
+transform max_value = invoke finvoke indMax(test_array);
+chant "Maximum value in array: " + max_value;
+
+transform nested_result = invoke oinvoke uterFunction(10);
+chant "Nested function result: " + nested_result;
+
+chant "✅ All functions work perfectly!";

@@ -1,0 +1,31 @@
+// Safe input test with error handling
+chant "=== Safe Input transform Test = ==";
+
+// Get name safely
+ transform name = listen("What's your name? ");
+if transform name = = "" {
+    transform name = "Anonymous";
+}
+chant "Hello, " + name + "!";
+
+// Get age safely
+ transform age_str = listen("How old are you? ");
+ transform age = 0;
+
+// Simple validation - check if it's a number
+if age_str != "" {
+    transform age = int(age_str);
+    chant "You entered age: " + age;
+    
+    if age >= 18 {
+        chant "You are an adult!";
+    }
+    else {
+        chant "You are young!";
+    }
+}
+else {
+    chant "No age entered, assuming you're ageless!";
+}
+
+chant "Nice to meet you, " + name + "!";

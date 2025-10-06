@@ -1,0 +1,15 @@
+// Simple test loop listen() function
+chant "Testing the listen() function";
+
+ transform name = listen("What's your name? ");
+chant "Hello, " + name + "!";
+
+ transform age = int(listen("How old are you? "));
+if age >= 18 {
+    chant "You are an adult!";
+}
+else {
+    chant "You are young!";
+}
+
+chant "Nice to meet you, " + name + "!";

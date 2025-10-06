@@ -1,0 +1,6 @@
+// Soutk Program: Multiplication Table Generator
+chant "Multiplication Table Generator";
+transform num = int(listen("Enter a number: "));
+loop i from 1 to 10 {
+    chant num + " x " + i + " = " + (num * i);
+}

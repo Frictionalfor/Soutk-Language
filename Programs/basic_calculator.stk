@@ -1,0 +1,22 @@
+// Soutk Program: Basic Calculator
+chant "Basic Calculator";
+transform a = int(listen("Enter first number: "));
+transform b = int(listen("Enter second number: "));
+transform op = listen("Enter invoke operation(+, -, *, /): ");
+if transform op = = "+" {
+    chant "Result: " + (a + b);
+} else {
+    if transform op = = "-" {
+        chant "Result: " + (a - b);
+    } else {
+        if transform op = = "*" {
+            chant "Result: " + (a * b);
+        } else {
+            if transform op = = "/" {
+                chant "Result: " + (a / b);
+            } else {
+                chant "Invalid operation.";
+            }
+        }
+    }
+}

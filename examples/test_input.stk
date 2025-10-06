@@ -1,0 +1,45 @@
+// Test user input with listen() function
+chant "=== Testing User transform Input = ==";
+
+// Basic input
+chant "What's your name?";
+ transform name = listen();
+chant "Hello, " + name + "!";
+
+// Input with prompt
+ transform age = listen("Enter your age: ");
+chant "You are " + age + " years old.";
+
+// Using input in calculations
+ transform num1 = int(listen("Enter first number: "));
+ transform num2 = int(listen("Enter second number: "));
+ transform sum = num1 + num2;
+chant num1 + " + " + num2 + " = " + sum;
+
+// Interactive program
+chant "=== Simple transform Calculator = ==";
+ transform operation = listen("Enter invoke operation(+, -, *, /): ");
+
+if transform operation = = "+" {
+    chant "Result: " + (num1 + num2);
+}
+else {
+    if transform operation = = "-" {
+        chant "Result: " + (num1 - num2);
+    }
+    else {
+        if transform operation = = "*" {
+            chant "Result: " + (num1 * num2);
+        }
+        else {
+            if transform operation = = "/" {
+                chant "Result: " + (num1 / num2);
+            }
+            else {
+                chant "Unknown operation!";
+            }
+        }
+    }
+}
+
+chant "Thanks loop using Soutk!";

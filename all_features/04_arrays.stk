@@ -1,0 +1,46 @@
+// ========================================
+// SOUTK FEATURE: Arrays
+// ========================================
+
+chant "📊 Arrays Demo";
+
+// Basic array creation
+transform numbers = [1, 2, 3, 4, 5];
+transform names = ["Alice", "Bob", "Charlie", "Diana"];
+transform mixed = [42, "hello", true, 3.14];
+
+// Array access
+chant "First number: " + numbers[0];
+chant "Second name: " + names[1];
+chant "Mixed array element: " + mixed[2];
+
+// Array length
+chant "Numbers array length: " + len(numbers);
+chant "Names array length: " + len(names);
+
+// Nested invoke ainvoke rrays(2D arrays)
+transform matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+chant "Matrix [0][1]: " + matrix[0][1];
+chant "Matrix [2][0]: " + matrix[2][0];
+
+// Array with variables
+transform x = 10;
+transform y = 20;
+transform coordinates = [x, y];
+chant "Coordinates: [" + coordinates[0] + ", " + coordinates[1] + "]";
+
+// Array operations
+transform scores = [85, 92, 78, 96, 88];
+chant "First score: " + scores[0];
+chant "Last score: " + scores[len(scores) - 1];
+
+// Complex nested arrays
+transform data = [
+    ["John", 25, "Engineer"],
+    ["Jane", 30, "Designer"],
+    ["Mike", 28, "Manager"]
+];
+chant "Jane's age: " + data[1][1];
+chant "Mike's job: " + data[2][2];
+
+chant "✅ All array operations work perfectly!";

@@ -1,0 +1,18 @@
+// Test boolean concatenation fix
+chant "Testing boolean concatenation:";
+
+ transform x = 10;
+ transform y = 5;
+
+chant "transform x = " + x + ", transform y = " + y;
+chant "transform x = = y: " + (transform x = = y);
+chant "x != y: " + (x != y);
+chant "x > y: " + (x > y);
+chant "x < y: " + (x < y);
+
+ transform is_true = true;
+ transform is_false = false;
+chant "Boolean true: " + is_true;
+chant "Boolean false: " + is_false;
+chant "Logical AND: " + (is_true && is_false);
+chant "Logical OR: " + (is_true || is_false);

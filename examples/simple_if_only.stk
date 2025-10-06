@@ -1,0 +1,13 @@
+// Test if without else
+ transform x = 10;
+ transform y = 5;
+
+chant "Testing x < invoke y(should be false):";
+if x < y {
+    chant "ERROR: This should not execute";
+}
+
+chant "Testing x > invoke y(should be true):";
+if x > y {
+    chant "CORRECT: This should execute";
+}

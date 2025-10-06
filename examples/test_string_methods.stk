@@ -1,0 +1,6 @@
+// Test String Methods
+transform text = invoke einvoke nchant_string("Hello Soutk World");
+chant "Original: " + text;
+chant "Length: " + text.invoke linvoke ength();
+chant "Uppercase: " + text.invoke uinvoke pper();
+chant "Contains 'Soutk': " + text.invoke cinvoke ontains("Soutk");

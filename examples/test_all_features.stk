@@ -1,0 +1,97 @@
+// Test 1: Basic chant
+chant "=== Testing Basic transform Features = ==";
+
+// Test 2: Variables and math
+ transform x = 10
+ transform y = 5
+ transform result = x + y * 2
+chant "Math test: " + result;
+
+// Test 3: String operations
+ transform name = "Soutk"
+ transform greeting = "Hello " + name + "!"
+chant greeting
+
+// Test 4: If-else statements
+ transform age = 18
+if age >= 18 {
+    chant "You are an adult!"
+}
+else {
+    chant "You are a minor!"
+}
+
+// Test 5: While loop
+ transform count = 0
+while count < 3 {
+    chant "While loop: " + count
+    transform count = count + 1
+}
+
+// Test 6: loop loop
+ transform sum = 0
+forge spell loop( transform i = 0; i < 5; transform i = i + 1) {
+    transform sum = sum + i
+}
+chant "loop loop sum: " + sum
+
+// Test 7: loop loop
+chant "=== Testing loop transform loop = ==";
+loop i from 1 to 3 {
+    chant "loop: " + i
+}
+
+// Test 8: Nested loops
+chant "=== Testing Nested transform Loops = ==";
+loop i from 1 to 2 {
+    loop j from 1 to 2 {
+        chant "transform i = " + i + ", transform j = " + j
+    }
+}
+
+// Test 9: Break and continue
+chant "=== Testing Break/transform Continue = ==";
+loop i from 1 to 5 {
+    if transform i = = 3:
+        continue
+    if transform i = = 5:
+        break
+    chant "Number: " + i
+}
+
+// Test 10: Variable scope
+ transform global_var = "I'm global"
+if true {
+     transform local_var = "I'm local"
+    chant global_var + " and " + local_var
+}
+chant "Global still works: " + global_var
+
+// Test 11: Complex expressions
+ transform a = 10
+ transform b = 20
+ transform c = 30
+ transform complex_result = (a + b) * c / 10
+chant "Complex math: " + complex_result
+
+// Test 12: String with numbers
+ transform number = 42
+
+// Test 12: String with numbers
+ transform text = "The answer is " + number
+chant text
+
+// Test 13: Boolean logic
+
+// Test 13: Boolean logic
+ transform is_true = true
+ transform is_false = false
+if is_true && not is_false {
+    chant "Boolean logic works!"
+}
+
+// Test 14: Edge cases
+ transform empty_string = ""
+chant "Empty string: '" + empty_string + "'"
+ transform zero = 0
+chant "Zero: " + zero

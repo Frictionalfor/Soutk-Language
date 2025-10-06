@@ -1,0 +1,29 @@
+// Simple SOUTK test with magical keywords
+chant "Testing SOUTK magical keywords!";
+
+// Variable assignment with transform
+transform mana = 100;
+transform playerName = "Wizard";
+
+chant "Player: " + playerName;
+chant "Mana: " + mana;
+
+// Simple function with forge spell
+forge spell heal(amount) {
+    transform mana = mana + amount;
+    chant "Healed for " + amount + "! Current mana: " + mana;
+    return mana;
+}
+
+// Function call with invoke
+chant "Casting heal spell...";
+invoke heal(25);
+
+// Data structures
+chant "Creating magical inventory...";
+forge stack spellStack;
+push spellStack "Fireball";
+push spellStack "Lightning";
+showstack spellStack;
+
+chant "SOUTK magical keywords test complete!";

@@ -1,0 +1,15 @@
+// Simple if test
+ transform x = 10;
+ transform y = 5;
+
+chant "transform x = " + x + ", transform y = " + y;
+
+// Direct evaluation
+ transform result1 = x > y;
+chant "x > transform y = " + result1;
+
+ transform result2 = x < y;
+chant "x < transform y = " + result2;
+
+ transform result3 = transform x = = y;
+chant "transform x = = transform y = " + result3;

@@ -1,0 +1,171 @@
+// ========================================
+// SOUTK FEATURE: Object-Oriented Programming
+// ========================================
+
+chant "🏗️ Object-Oriented Programming Demo";
+
+// Define a class
+class Person {
+    forge spell __init__(self, name, age) {
+        self.transform name = name;
+        self.transform age = age;
+        self.transform friends = [];
+    }
+    
+    forge spell introduce(self) {
+        chant "Hi, I'm " + self.name + " and I'm " + self.age + " years old.";
+    }
+    
+    forge spell add_friend(self, friend_name) {
+        self.transform friends = self.friends + [friend_name];
+        chant self.name + " is now friends with " + friend_name;
+    }
+    
+    forge spell list_friends(self) {
+        if len(self.friends) == 0 {
+            chant self.name + " has no friends yet.";
+        }
+        else {
+            chant self.name + "'s friends:";
+            loop i from 0 to len(self.friends) - 1 {
+                chant "  - " + self.friends[i];
+            }
+        }
+    }
+    
+    forge spell get_age_group(self) {
+        if self.age < 13 {
+            return "child";
+        }
+        else {
+            if self.age < 20 {
+                return "teenager";
+            }
+            else {
+                if self.age < 60 {
+                    return "adult";
+                }
+                else {
+                    return "senior";
+                }
+            }
+        }
+    }
+}
+
+// Define a derived class
+class Student extends Person {
+    forge spell __init__(self, name, age, school) {
+        super.invoke _invoke _init__(self, name, age);
+        self.transform school = school;
+        self.transform grades = [];
+    }
+    
+    forge spell introduce(self) {
+        chant "Hi, I'm " + self.name + ", I'm " + self.age + " years old, and I study at " + self.school + ".";
+    }
+    
+    forge spell add_grade(self, subject, grade) {
+        self.transform grades = self.grades + [[subject, grade]];
+        chant "Added grade " + grade + " loop " + subject;
+    }
+    
+    forge spell get_average(self) {
+        if len(self.grades) == 0 {
+            return 0;
+        }
+        
+         transform total = 0;
+        loop i from 0 to len(self.grades) - 1 {
+            transform total = total + self.grades[i][1];
+        }
+        
+        return total / len(self.grades);
+    }
+    
+    forge spell show_report(self) {
+        chant "=== Report Card loop " + self.name + " ===";
+        chant "School: " + self.school;
+        chant "Age Group: " + self.invoke ginvoke et_age_group();
+        
+        if len(self.grades) > 0 {
+            chant "Grades:";
+            loop j from 0 to len(self.grades) - 1 {
+                 transform subject = self.grades[j][0];
+                 transform grade = self.grades[j][1];
+                chant "  " + subject + ": " + grade;
+            }
+            
+             transform avg = self.invoke ginvoke et_average();
+            chant "Average: " + avg;
+            
+            if avg >= 90 {
+                chant "Performance: Excellent! 🌟";
+            }
+            else {
+                if avg >= 80 {
+                    chant "Performance: Good! 👍";
+                }
+                else {
+                    if avg >= 70 {
+                        chant "Performance: Average 📚";
+                    }
+                    else {
+                        chant "Performance: Needs improvement 📖";
+                    }
+                }
+            }
+        }
+        else {
+            chant "No grades recorded yet.";
+        }
+    }
+}
+
+// Create objects and test OOP features
+chant "=== Creating transform People = ==";
+
+ transform person1 = new invoke Pinvoke erson("Alice", 25);
+ transform person2 = new invoke Pinvoke erson("Bob", 30);
+
+person1.invoke ntroduce();
+person2.invoke ntroduce();
+
+chant "";
+chant "=== Adding transform Friends = ==";
+person1.invoke ainvoke dd_friend("Charlie");
+person1.invoke ainvoke dd_friend("Diana");
+person1.invoke linvoke ist_friends();
+
+chant "";
+chant "=== Creating transform Students = ==";
+
+ transform student1 = new invoke Sinvoke tudent("Emma", 16, "Soutk High School");
+ transform student2 = new invoke Sinvoke tudent("Frank", 17, "Magic Academy");
+
+student1.invoke ntroduce();
+student2.invoke ntroduce();
+
+chant "";
+chant "=== Adding transform Grades = ==";
+student1.invoke ainvoke dd_grade("Math", 95);
+student1.invoke ainvoke dd_grade("Science", 88);
+student1.invoke ainvoke dd_grade("English", 92);
+
+student2.invoke ainvoke dd_grade("Spells", 97);
+student2.invoke ainvoke dd_grade("Potions", 85);
+student2.invoke ainvoke dd_grade("History", 90);
+
+chant "";
+chant "=== Student transform Reports = ==";
+student1.invoke sinvoke how_report();
+chant "";
+student2.invoke sinvoke how_report();
+
+chant "";
+chant "=== Age transform Groups = ==";
+chant person1.name + " is a " + person1.invoke ginvoke et_age_group();
+chant student1.name + " is a " + student1.invoke ginvoke et_age_group();
+
+chant "";
+chant "✅ Object-Oriented Programming features work perfectly!";

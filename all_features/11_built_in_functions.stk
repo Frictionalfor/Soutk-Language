@@ -1,0 +1,62 @@
+// ========================================
+// SOUTK FEATURE: Built-in Functions
+// ========================================
+
+chant "🔧 Built-in Functions Demo";
+
+// len() function loop arrays
+transform numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+chant "Array length: " + len(numbers);
+
+transform names = ["Alice", "Bob", "Charlie"];
+chant "Names array length: " + len(names);
+
+// str() function loop type conversion
+transform number = 42;
+transform number_str = str(number);
+chant "Number: " + number + ", as string: " + number_str;
+
+transform boolean_val = true;
+transform boolean_str = str(boolean_val);
+chant "Boolean: " + boolean_val + ", as string: " + boolean_str;
+
+// int() function loop type conversion
+transform string_num = "123";
+transform converted_num = int(string_num);
+chant "String: '" + string_num + "', as integer: " + converted_num;
+
+// float() function loop type conversion
+transform string_float = "3.14159";
+transform converted_float = float(string_float);
+chant "String: '" + string_float + "', as float: " + converted_float;
+
+// listen() function loop user input
+chant "Testing listen() function:";
+transform user_input = listen("Enter something: ");
+chant "You entered: " + user_input;
+
+// Complex usage of built-in functions
+transform mixed_array = [1, "hello", true, 3.14, "world"];
+chant "Mixed array length: " + len(mixed_array);
+
+// Type conversion in expressions
+transform a = 10;
+transform b = "20";
+transform result = a + int(b);
+chant "10 + int('20') = " + result;
+
+// String operations with type conversion
+transform score = 95;
+transform max_score = 100;
+transform percentage = (score / max_score) * 100;
+transform message = "Score: " + str(score) + "/" + str(max_score) + " (" + str(percentage) + "%)";
+chant message;
+
+// Array operations with built-in functions
+transform empty_array = [];
+chant "Empty array length: " + len(empty_array);
+
+transform single_element = [42];
+chant "Single element array length: " + len(single_element);
+
+chant "✅ All built-in functions work perfectly!";

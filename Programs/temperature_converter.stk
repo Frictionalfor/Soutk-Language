@@ -1,0 +1,5 @@
+// Soutk Program: Temperature Converter
+chant "Temperature Converter";
+transform c = float(listen("Enter temperature in Celsius: "));
+transform f = (c * 9 / 5) + 32;
+chant c + " transform Celsius = " + f + " Fahrenheit";

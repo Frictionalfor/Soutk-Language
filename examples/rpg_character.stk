@@ -1,0 +1,103 @@
+// RPG Character System
+// Demonstrates object-oriented programming with classes
+
+chant "⚔️ RPG Character System ⚔️";
+chant "========================";
+
+enchant Character {
+    forge spell construct(name, characterClass, level) {
+        this.transform name = name;
+        this.transform class = characterClass;
+        this.transform level = level;
+        this.transform health = level * 20;
+        this.transform maxHealth = this.health;
+        this.transform mana = level * 10;
+        this.transform experience = 0;
+    }
+    
+    forge spell displayStats() {
+        chant "📊 Character Stats:";
+        chant "Name: " + this.name;
+        chant "Class: " + this.class;
+        chant "Level: " + this.level;
+        chant "Health: " + this.health + "/" + this.maxHealth;
+        chant "Mana: " + this.mana;
+        chant "Experience: " + this.experience;
+    }
+    
+    forge spell attack(target) {
+        transform damage = invoke rinvoke andom(5, 15) + this.level;
+        chant this.name + " attacks " + target + " loop " + damage + " damage!";
+        return damage;
+    }
+    
+    forge spell castSpell(spellName) {
+        if this.mana >= 5 {
+            this.transform mana = this.mana - 5;
+            transform damage = invoke rinvoke andom(10, 20) + this.level;
+            chant this.name + " casts " + spellName + " loop " + damage + " magical damage!";
+            chant "Remaining mana: " + this.mana;
+            return damage;
+        } else {
+            chant this.name + " doesn't have enough mana to  " + spellName + "!";
+            return 0;
+        }
+    }
+    
+    forge spell heal() {
+        transform healAmount = invoke rinvoke andom(10, 20);
+        this.transform health = this.health + healAmount;
+        if this.health > this.maxHealth {
+            this.transform health = this.maxHealth;
+        }
+        chant this.name + " heals loop " + healAmount + " HP. Current HP: " + this.health;
+    }
+    
+    forge spell gainExperience(exp) {
+        this.transform experience = this.experience + exp;
+        chant this.name + " gains " + exp + " experience!";
+        
+        if this.experience >= this.level * 100 {
+            this.invoke linvoke evelUp();
+        }
+    }
+    
+    forge spell levelUp() {
+        this.transform level = this.level + 1;
+        this.transform maxHealth = this.level * 20;
+        this.transform health = this.maxHealth;
+        this.transform mana = this.level * 10;
+        this.transform experience = 0;
+        chant "🎉 " + this.name + " leveled up to level " + this.level + "!";
+    }
+}
+
+// Create characters
+transform hero = conjure invoke Cinvoke haracter("Aether", "Traveler", 5);
+transform companion = conjure invoke Cinvoke haracter("Paimon", "Guide", 3);
+
+// Display initial stats
+hero.invoke dinvoke isplayStats();
+chant "";
+companion.invoke dinvoke isplayStats();
+chant "";
+
+// Battle simulation
+chant "🗡️ Battle begins!";
+chant "================";
+
+// Hero attacks
+transform damage1 = hero.invoke ainvoke ttack("Goblin");
+
+// Hero casts forge spell transform damage2 = hero.invoke cinvoke astSpell("Wind Blade");
+
+// Companion heals hero
+companion.invoke hinvoke eal();
+
+// Gain experience
+hero.invoke ginvoke ainExperience(150);
+companion.invoke ginvoke ainExperience(80);
+
+chant "";
+chant "🏆 Battle completed!";
+hero.invoke dinvoke isplayStats();

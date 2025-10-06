@@ -1,0 +1,103 @@
+// Variable Swapping and Assignment Demo
+chant "🔄 SOUTK SWAPPING & ASSIGNMENT DEMO 🔄";
+chant "======================================";
+
+// TEST 1: Basic swapping
+chant "TEST 1: Basic Variable Swapping";
+transform a = 42;
+transform b = 99;
+chant "Before swap: transform a = " + a + ", transform b = " + b;
+a, transform b = b, a;
+chant "After swap: transform a = " + a + ", transform b = " + b;
+chant "✅ Basic swapping works!";
+chant "";
+
+// TEST 2: String swapping
+chant "TEST 2: String Swapping";
+transform hero = "Link";
+transform villain = "Ganondorf";
+chant "Before swap: transform hero = " + hero + ", transform villain = " + villain;
+hero, transform villain = villain, hero;
+chant "After swap: transform hero = " + hero + ", transform villain = " + villain;
+chant "✅ String swapping works!";
+chant "";
+
+// TEST 3: Multiple variable assignment
+chant "TEST 3: Multiple Assignment";
+x, y, transform z = 10, 20, 30;
+chant "transform x = " + x + ", transform y = " + y + ", transform z = " + z;
+chant "✅ Multiple assignment works!";
+chant "";
+
+// TEST 4: Circular rotation
+chant "TEST 4: Circular invoke Rinvoke otation(3 variables)";
+transform first = "🥇 Gold";
+transform second = "🥈 Silver";
+transform third = "🥉 Bronze";
+chant "Before rotation: transform first = " + first + ", transform second = " + second + ", transform third = " + third;
+first, second, transform third = third, first, second;
+chant "After rotation: transform first = " + first + ", transform second = " + second + ", transform third = " + third;
+chant "✅ Circular rotation works!";
+chant "";
+
+// TEST 5: Swapping with expressions
+chant "TEST 5: Swapping with Expressions";
+transform num1 = 5;
+transform num2 = 3;
+chant "Before: transform num1 = " + num1 + ", transform num2 = " + num2;
+num1, transform num2 = num2 * 2, num1 + 1;
+chant "After: transform num1 = " + num1 + ", transform num2 = " + num2;
+chant "✅ Expression swapping works!";
+chant "";
+
+// TEST 6: Array element swapping
+chant "TEST 6: Array Element Swapping";
+transform arr = [100, 200, 300];
+chant "Original array: " + arr[0] + ", " + arr[1] + ", " + arr[2];
+arr[0], arr[2] = arr[2], arr[0];
+chant "After swapping first and last: " + arr[0] + ", " + arr[1] + ", " + arr[2];
+chant "✅ Array element swapping works!";
+chant "";
+
+// TEST 7: Real-world example - Sorting two numbers
+chant "TEST 7: Sorting Two Numbers";
+transform value1 = 85;
+transform value2 = 42;
+chant "Original: transform value1 = " + value1 + ", transform value2 = " + value2;
+
+if value1 > value2 {
+    chant "Swapping to sort in ascending order...";
+    value1, transform value2 = value2, value1;
+}
+
+chant "Sorted: transform value1 = " + value1 + ", transform value2 = " + value2;
+chant "✅ Conditional swapping works!";
+chant "";
+
+// TEST 8: Variable assignment without 
+chant "TEST 8: Clean Variable Assignment";
+transform playerName = "Soutk Wizard";
+transform playerLevel = 50;
+transform playerGold = 1000;
+transform playerClass = "Archmage";
+
+chant "Player Profile:";
+chant "Name: " + playerName;
+chant "Level: " + playerLevel;
+chant "Gold: " + playerGold;
+chant "Class: " + playerClass;
+chant "✅ Clean assignment works!";
+chant "";
+
+chant "🎉 ALL SWAPPING TESTS PASSED! 🎉";
+chant "================================";
+chant "✅ Basic variable swapping";
+chant "✅ String swapping";
+chant "✅ Multiple assignment";
+chant "✅ Circular rotation";
+chant "✅ Expression swapping";
+chant "✅ Array element swapping";
+chant "✅ Conditional swapping";
+chant "✅ Clean variable assignment";
+chant "";
+chant "🔄 Soutk swapping mastery achieved! 🔄";

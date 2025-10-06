@@ -1,0 +1,40 @@
+// ========================================
+// SOUTK FEATURE: String Operations
+// ========================================
+
+chant "📝 String Operations Demo";
+
+// String concatenation
+transform first_name = "Frictionalfor";
+transform last_name = "The Soutk creator";
+transform full_name = first_name + " " + last_name;
+chant "Full name: " + full_name;
+
+// String with variables
+transform age = 17;
+transform city = "Pune";
+transform bio = first_name + " is " + age + " years old and lives in " + city;
+chant "Bio: " + bio;
+
+// Multiple concatenations
+transform greeting = "Hello, " + first_name + "! Welcome to " + city + "!";
+chant greeting;
+
+// String with numbers
+transform score = 95;
+transform message = "Your score is " + score + " out of 100!";
+chant message;
+
+// Complex string building
+transform day = "Wednesday";
+transform month = "August";
+transform year = 2025;
+transform date = "Today is " + day + ", " + month + " " + year;
+chant date;
+
+// String with boolean
+transform is_active = true;
+transform status = "Account status: " + is_active;
+chant status;
+
+chant "✅ All string operations work perfectly!";

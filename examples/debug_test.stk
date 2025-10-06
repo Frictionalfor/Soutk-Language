@@ -1,0 +1,6 @@
+chant "Start";
+forge spell test() {
+    chant "Function body";
+}
+ invoke tinvoke est()
+chant "End";

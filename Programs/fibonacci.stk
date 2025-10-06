@@ -1,0 +1,13 @@
+// Soutk Program: Fibonacci Series
+chant "Fibonacci Series up to N terms:";
+transform n = int(listen("Enter number of terms: "));
+transform a = 0;
+transform b = 1;
+chant a;
+chant b;
+loop i from 2 to n - 1 {
+    transform next = a + b;
+    chant next;
+    transform a = b;
+    transform b = next;
+}

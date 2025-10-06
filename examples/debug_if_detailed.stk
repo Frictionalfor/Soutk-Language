@@ -1,0 +1,29 @@
+// Debug if statements in detail
+chant "=== IF STATEMENT transform DEBUG = ==";
+
+ transform x = 10;
+ transform y = 5;
+
+chant "Testing: x > y where transform x = " + x + " and transform y = " + y;
+chant "Expected: invoke tinvoke rue(10 > 5)";
+
+if x > y {
+    chant "BRANCH 1: x is greater than y - This should execute";
+}
+else {
+    chant "BRANCH 2: x is not greater than y - This should not execute";
+}
+
+chant "---";
+
+chant "Testing: x < y where transform x = " + x + " and transform y = " + y;
+chant "Expected: invoke finvoke alse(10 < 5)";
+
+if x < y {
+    chant "BRANCH 1: x is less than y - This should not execute";
+}
+else {
+    chant "BRANCH 2: x is not less than y - This should execute";
+}
+
+chant "=== END transform DEBUG = ==";

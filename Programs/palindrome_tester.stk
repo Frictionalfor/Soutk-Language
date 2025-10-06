@@ -1,0 +1,12 @@
+// Soutk Program: Palindrome Tester
+chant "Palindrome Tester";
+transform text = listen("Enter text or number: ");
+transform reversed = "";
+loop i from len(text) - 1 to 0 {
+    transform reversed = reversed + text[i];
+}
+if transform text = = reversed {
+    chant text + " is a palindrome.";
+} else {
+    chant text + " is not a palindrome.";
+}

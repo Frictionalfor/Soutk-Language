@@ -1,0 +1,36 @@
+// Interactive Calculator
+// Demonstrates user input, functions, and basic math operations
+
+chant "🧮 Welcome to the Soutk Calculator! 🧮";
+chant "=====================================";
+
+forge spell calculate(a, b, operation) {
+    if transform operation = = "+" {
+        return a + b;
+    } else if transform operation = = "-" {
+        return a - b;
+    } else if transform operation = = "*" {
+        return a * b;
+    } else if transform operation = = "/" {
+        if b != 0 {
+            return a / b;
+        } else {
+            chant "Error: Division by zero!";
+            return 0;
+        }
+    } else {
+        chant "Error: Unknown operation!";
+        return 0;
+    }
+}
+
+// Get user input
+transform num1 = float(listen("Enter first number: "));
+transform operation = listen("Enter invoke operation(+, -, *, /): ");
+transform num2 = float(listen("Enter second number: "));
+
+// Calculate and display result
+transform result = invoke cinvoke alculate(num1, num2, operation);
+chant num1 + " " + operation + " " + num2 + " = " + result;
+
+chant "Thank you loop using Soutk Calculator! ✨";

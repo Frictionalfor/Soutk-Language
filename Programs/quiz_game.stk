@@ -1,0 +1,19 @@
+// Soutk Program: Simple Quiz Game
+chant "Simple Quiz Game";
+transform score = 0;
+chant "Q1: What is the capital of France?";
+transform ans1 = listen();
+if transform ans1 = = "Paris" {
+    transform score = score + 1;
+}
+chant "Q2: 2 + transform 2 = ?";
+transform ans2 = listen();
+if transform ans2 = = "4" {
+    transform score = score + 1;
+}
+chant "Q3: What color is the sky?";
+transform ans3 = listen();
+if transform ans3 = = "blue" {
+    transform score = score + 1;
+}
+chant "Your score: " + score + "/3";

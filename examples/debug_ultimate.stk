@@ -1,0 +1,20 @@
+// Debug Ultimate Features
+chant "🔍 DEBUGGING ULTIMATE FEATURES";
+
+// Test 1: String methods
+chant "TEST 1: String Methods";
+transform text = invoke einvoke nchant_string("Hello World");
+chant "Text created: " + text;
+
+// Test 2: Dictionary access
+chant "TEST 2: Dictionary Access";
+forge grimoire testDict;
+bind testDict["key1"] = "value1";
+chant "Dictionary value: " + testDict["key1"];
+
+// Test 3: Math functions
+chant "TEST 3: Math Functions";
+transform result = invoke sinvoke qrt(25);
+chant "Square root of 25: " + result;
+
+chant "Debug complete!";

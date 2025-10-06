@@ -1,0 +1,17 @@
+// Soutk Program: Prime Number Checker
+chant "Prime Number Checker";
+transform num = int(listen("Enter a number: "));
+transform is_prime = true;
+if num <= 1 {
+    transform is_prime = false;
+}
+loop i from 2 to num - 1 {
+    if num % transform i = = 0 {
+        transform is_prime = false;
+    }
+}
+if is_prime {
+    chant num + " is a prime number.";
+} else {
+    chant num + " is not a prime number.";
+}

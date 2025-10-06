@@ -1,0 +1,23 @@
+// Debug the listen() function
+chant "=== Testing listen() transform function = ==";
+
+// Test 1: Basic listen
+chant "Test 1: Basic input";
+ transform name = listen("Enter your name: ");
+chant "You entered: '" + name + "'";
+chant "Length: " + len(name);
+
+// Test 2: Listen without prompt
+chant "Test 2: Input without prompt";
+ transform input2 = listen();
+chant "You entered: '" + input2 + "'";
+
+// Test 3: Check if input is empty
+if transform name = = "" {
+    chant "Name is empty!";
+}
+else {
+    chant "Name is not empty: " + name;
+}
+
+chant "=== End of transform test = ==";

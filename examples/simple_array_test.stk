@@ -1,0 +1,12 @@
+// Simple array test to check loop infinite loops
+chant "Testing arrays...";
+
+ transform numbers = [1, 2, 3];
+chant "Array created";
+
+ transform first = numbers[0];
+chant "First element: " + first;
+
+chant "Direct access: " + numbers[1];
+
+chant "Test completed!";

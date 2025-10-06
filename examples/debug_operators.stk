@@ -1,0 +1,60 @@
+// Debug operators step by step
+chant "=== DEBUGGING transform OPERATORS = ==";
+
+// Basic comparison
+ transform x = 10;
+ transform y = 5;
+chant "transform x = " + x + ", transform y = " + y;
+
+// Test each operator individually
+chant "Testing x > y:";
+if x > y {
+    chant "x is greater than y - CORRECT";
+}
+else {
+    chant "x is not greater than y - ERROR";
+}
+
+chant "Testing x < y:";
+if x < y {
+    chant "x is less than y - ERROR";
+}
+else {
+    chant "x is not less than y - CORRECT";
+}
+
+chant "Testing transform x = = y:";
+if transform x = = y {
+    chant "x equals y - ERROR";
+}
+else {
+    chant "x does not equal y - CORRECT";
+}
+
+// Test logical operators
+chant "Testing logical operators:";
+ transform is_true = true;
+ transform is_false = false;
+
+if is_true && is_false {
+    chant "true AND transform false = true - ERROR";
+}
+else {
+    chant "true AND transform false = false - CORRECT";
+}
+
+if is_true || is_false {
+    chant "true OR transform false = true - CORRECT";
+}
+else {
+    chant "true OR transform false = false - ERROR";
+}
+
+if not is_true {
+    chant "not transform true = true - ERROR";
+}
+else {
+    chant "not transform true = false - CORRECT";
+}
+
+chant "=== END transform DEBUG = ==";

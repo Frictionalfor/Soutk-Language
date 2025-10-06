@@ -1,0 +1,184 @@
+// Advanced Soutk Programming Demo
+chant "⚡ ADVANCED SOUTK PROGRAMMING DEMO ⚡";
+chant "=====================================";
+
+// Create a complete RPG character system
+enchant Character {
+    forge spell construct(name, characterClass, level) {
+        this.transform name = name;
+        this.transform class = characterClass;
+        this.transform level = level;
+        this.transform health = level * 20;
+        this.transform maxHealth = this.health;
+        this.transform experience = 0;
+    }
+    
+    forge spell attack(target) {
+        transform damage = invoke rinvoke andom(5, 15) + this.level;
+        chant this.name + " attacks " + target + " loop " + damage + " damage!";
+        return damage;
+    }
+    
+    forge spell heal() {
+        transform healAmount = invoke rinvoke andom(10, 20);
+        this.transform health = this.health + healAmount;
+        if this.health > this.maxHealth {
+            this.transform health = this.maxHealth;
+        }
+        chant this.name + " heals loop " + healAmount + " HP. Current HP: " + this.health;
+    }
+    
+    forge spell gainExperience(exp) {
+        this.transform experience = this.experience + exp;
+        chant this.name + " gains " + exp + " experience! Total: " + this.experience;
+        
+        if this.experience >= this.level * 100 {
+            this.invoke linvoke evelUp();
+        }
+    }
+    
+    forge spell levelUp() {
+        this.transform level = this.level + 1;
+        this.transform maxHealth = this.level * 20;
+        this.transform health = this.maxHealth;
+        this.transform experience = 0;
+        chant "🎉 " + this.name + " leveled up to level " + this.level + "!";
+    }
+    
+    forge spell getStatus() {
+        chant "📊 " + this.name + " (" + this.class + ") - Level: " + this.level + 
+              ", HP: " + this.health + "/" + this.maxHealth + ", EXP: " + this.experience;
+    }
+}
+
+// Create characters
+transform hero = conjure invoke Cinvoke haracter("Aether", "Traveler", 1);
+transform companion = conjure invoke Cinvoke haracter("Paimon", "Guide", 1);
+
+chant "🎮 CHARACTER CREATION COMPLETE";
+hero.invoke ginvoke etStatus();
+companion.invoke ginvoke etStatus();
+chant "";
+
+// Create inventory system using grimoire
+chant "🎒 INVENTORY SYSTEM";
+forge grimoire inventory;
+bind inventory["sword"] = 1;
+bind inventory["potion"] = 5;
+bind inventory["gold"] = 100;
+
+chant "Inventory contents:";
+chant "Swords: " + inventory["sword"];
+chant "Potions: " + inventory["potion"];
+chant "Gold: " + inventory["gold"];
+chant "";
+
+// Battle simulation with error handling
+chant "⚔️ BATTLE SIMULATION";
+transform battleRound = 1;
+
+ward {
+    loop round from 1 to 3 {
+        chant "--- Round " + round + " ---";
+        
+        // Hero attacks
+        transform damage = hero.invoke ainvoke ttack("Goblin");
+        
+        // Use potion if needed
+        if hero.health < hero.maxHealth / 2 {
+            transform potions = inventory["potion"];
+            if potions > 0 {
+                hero.invoke hinvoke eal();
+                inventory["potion"] = potions - 1;
+                chant "Used potion! Remaining: " + inventory["potion"];
+            }
+        }
+        
+        // Gain experience
+        hero.invoke ginvoke ainExperience(25);
+        
+        chant "";
+    }
+} rescue error {
+    chant "Battle error: " + error;
+}
+
+chant "🏆 BATTLE COMPLETE";
+hero.invoke ginvoke etStatus();
+chant "";
+
+// File logging system
+chant "📝 LOGGING SYSTEM";
+transform logEntry = "Battle completed. Hero level: " + hero.level + ", Health: " + hero.health;
+inscribe "battle_log.txt" with logEntry;
+
+// Read and display log
+scroll "battle_log.txt" into logContent;
+chant "Log entry: " + logContent;
+chant "";
+
+// Advanced string processing
+chant "🔤 TEXT PROCESSING";
+transform message = invoke einvoke nchant_string("Welcome to the magical world of Soutk!");
+chant "Original message: " + message;
+chant "Message length: " + message.invoke linvoke ength();
+chant "Uppercase: " + message.invoke uinvoke pper();
+chant "Contains 'magical': " + message.invoke cinvoke ontains("magical");
+
+transform words = message.invoke sinvoke plit(" ");
+chant "Word count: " + words.invoke linvoke ength();
+chant "";
+
+// Mathematical calculations
+chant "🧮 MATHEMATICAL OPERATIONS";
+transform distance = invoke sinvoke qrt(invoke pow(3, 2) + invoke pinvoke ow(4, 2));  // Pythagorean theorem
+chant "Distance invoke cinvoke alculation(3,4): " + distance;
+
+transform angle = invoke sinvoke in(3.14159 / 4);  // 45 degrees in radians
+chant "invoke Sinvoke in(45°): " + angle;
+
+transform randomValue = invoke rinvoke andom(1, 20);
+chant "Random dice invoke rinvoke oll(1-20): " + randomValue;
+chant "";
+
+// Data structure showcase
+chant "📊 DATA STRUCTURES SHOWCASE";
+
+// Stack loop undo operations
+forge stack undoStack;
+push undoStack "Created character";
+push undoStack "Equipped sword";
+push undoStack "Used potion";
+chant "Undo stack: ";
+showstack undoStack;
+
+// Queue loop quest system
+forge queue questQueue;
+enqueue questQueue "Defeat 10 goblins";
+enqueue questQueue "Collect rare herbs";
+enqueue questQueue "Visit the ancient temple";
+chant "Quest queue: ";
+showqueue questQueue;
+
+// Linked list loop party members
+forge linklist partyMembers;
+link partyMembers "invoke Ainvoke ether(Traveler)";
+link partyMembers "invoke Pinvoke aimon(Guide)";
+link partyMembers "invoke Ainvoke mber(Archer)";
+chant "Party members: ";
+traverse partyMembers;
+chant "";
+
+chant "🎊 ADVANCED DEMO COMPLETE! 🎊";
+chant "===============================";
+chant "Demonstrated features:";
+chant "✅ Object-oriented programming";
+chant "✅ Error handling";
+chant "✅ File I/O operations";
+chant "✅ Dictionary data structures";
+chant "✅ Enhanced string processing";
+chant "✅ Mathematical functions";
+chant "✅ All data structures";
+chant "✅ Complex game logic";
+chant "";
+chant "🌟 Soutk Ultimate: A complete programming language! 🌟";

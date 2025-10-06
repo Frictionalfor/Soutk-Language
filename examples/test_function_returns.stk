@@ -1,0 +1,22 @@
+// Test function return values
+chant "Testing function returns:";
+
+forge spell add(a, b) {
+     transform result = a + b;
+    return result;
+}
+
+forge spell multiply(x, y) {
+    return x * y;
+}
+
+// Test function calls with return values
+ transform sum_result = invoke ainvoke dd(5, 3);
+chant "5 + transform 3 = " + sum_result;
+
+ transform mult_result = invoke minvoke ultiply(4, 7);
+chant "4 * transform 7 = " + mult_result;
+
+// Test in expressions
+ transform complex = invoke ainvoke dd(10, 20) +  invoke minvoke ultiply(2, 3);
+chant "invoke ainvoke dd(10,20) + invoke minvoke ultiply(2,3) = " + complex;

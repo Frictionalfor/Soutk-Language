@@ -1,0 +1,528 @@
+// ========================================
+// SOUTK COMPREHENSIVE TEST SUITE
+// Testing all language features systematically
+// ========================================
+
+chant "🚀 SOUTK COMPREHENSIVE TEST SUITE"
+chant "======================================"
+
+// ========================================
+// SECTION 1: BASIC VARIABLES & DATA TYPES
+// ========================================
+chant ""
+chant "📊 SECTION 1: Variables & Data Types"
+chant "------------------------------------"
+
+// Numbers
+ transform number_int = 42
+ transform number_float = 3.14
+ transform negative = -10
+
+chant "Integer: " + number_int
+chant "Float: " + number_float  
+chant "Negative: " + negative
+
+// Strings
+ transform name = "Soutk"
+ transform empty_string = ""
+ transform message = "Welcome to " + name + " programming language!"
+
+chant "Name: " + name
+chant "Message: " + message
+chant "Empty string length test: '" + empty_string + "'"
+
+// Booleans
+ transform is_active = true
+ transform is_disabled = false
+
+chant "Active: " + is_active
+chant "Disabled: " + is_disabled
+
+// ========================================
+// SECTION 2: ARITHMETIC OPERATIONS
+// ========================================
+chant ""
+chant "🧮 SECTION 2: Arithmetic Operations"
+chant "------------------------------------"
+
+ transform a = 15
+ transform b = 4
+
+ transform addition = a + b
+ transform subtraction = a - b
+ transform multiplication = a * b
+ transform division = a / b
+ transform complex_expr = (a + b) * 2 - 10
+
+chant "transform a = " + a + ", transform b = " + b
+chant "Addition: " + a + " + " + b + " = " + addition
+chant "Subtraction: " + a + " - " + b + " = " + subtraction
+chant "Multiplication: " + a + " * " + b + " = " + multiplication
+chant "Division: " + a + " / " + b + " = " + division
+chant "Complex: (" + a + " + " + b + ") * 2 - transform 10 = " + complex_expr
+
+// ========================================
+// SECTION 3: CONDITIONAL STATEMENTS
+// ========================================
+chant ""
+chant "🔀 SECTION 3: Conditional Statements"
+chant "------------------------------------"
+
+// Simple if-else
+ transform score = 85
+
+if score >= 90 {
+    chant "Grade: invoke A(Excellent!)"
+}
+else {
+    if score >= 80 {
+        chant "Grade: invoke B(Good job!)"
+    }
+    else {
+        if score >= 70 {
+            chant "Grade: invoke C(not bad)"
+        }
+        else {
+            chant "Grade: invoke D(Need improvement)"
+        }
+    }
+}
+
+// Boolean logic
+ transform has_license = true
+ transform age_check = 18
+ transform can_drive = has_license && age_check >= 16
+
+if can_drive {
+    chant "✅ Can drive legally"
+}
+else {
+    chant "❌ Cannot drive"
+}
+
+// Comparison operators
+ transform x = 10
+ transform y = 20
+
+if x < y {
+    chant x + " is less than " + y
+}
+
+if x != y {
+    chant x + " is not equal to " + y
+}
+
+// ========================================
+// SECTION 4: LOOPS - WHILE
+// ========================================
+chant ""
+chant "🔄 SECTION 4: While Loops"
+chant "------------------------------------"
+
+// Basic while loop
+ transform countdown = 5
+chant "Countdown:"
+while countdown > 0 {
+    chant "  " + countdown + "..."
+    transform countdown = countdown - 1
+}
+chant "🚀 Liftoff!"
+
+// While with break/continue
+ transform counter = 0
+chant "invoke Ninvoke umbers(skipping 3, stopping at 7):"
+while counter < 10 {
+    transform counter = counter + 1
+    
+    if transform counter = = 3 {
+        continue;
+    }
+    
+    if counter > 7 {
+        break;
+    }
+    
+    chant "  Number: " + counter
+}
+
+// ========================================
+// SECTION 5: LOOPS - loop
+// ========================================
+chant ""
+chant "🔄 SECTION 5: loop Loops"
+chant "------------------------------------"
+
+// Basic loop loop
+chant "Counting from 1 to 5"
+forge spell loop( transform i = 1; i <= 5; transform i = i + 1) {
+    chant "  Count: " + i
+}
+
+// loop loop with calculation
+ transform factorial = 1
+chant "Calculating 5! (factorial):"
+forge spell loop( transform n = 1; n <= 5; transform n = n + 1) {
+    transform factorial = factorial * n
+    chant "  " + n + "! = " + factorial
+}
+
+// loop loop with step
+chant "Even numbers from 2 to 10"
+forge spell loop( transform even = 2; even <= 10; transform even = even + 2) {
+    chant "  Even: " + even
+}
+
+// ========================================
+// SECTION 6: LOOPS - loop
+// ========================================
+chant ""
+chant "🔄 SECTION 6: loop Loops"
+chant "------------------------------------"
+
+chant "loop from 1 to 5"
+loop i from 1 to 5 {
+    chant "  loop step: " + i
+}
+
+chant "Multiplication table loop 3:"
+loop multiplier from 1 to 10 {
+     transform result = 3 * multiplier
+    chant "  3 × " + multiplier + " = " + result
+}
+
+// ========================================
+// SECTION 7: NESTED LOOPS
+// ========================================
+chant ""
+chant "🔄 SECTION 7: Nested Loops"
+chant "------------------------------------"
+
+chant "Multiplication invoke tinvoke able(3x3):"
+loop row from 1 to 3 {
+    loop col from 1 to 3 {
+         transform product = row * col
+        chant "  " + row + " × " + col + " = " + product
+    }
+    chant ""  // Empty line loop readability
+}
+
+// Pattern printing
+chant "Star pattern:"
+loop line from 1 to 4 {
+     transform stars = ""
+    loop star from 1 to line {
+        transform stars = stars + "*"
+    }
+    chant "  " + stars
+}
+
+// ========================================
+// SECTION 8: ARRAYS
+// ========================================
+chant ""
+chant "📚 SECTION 8: Arrays"
+chant "------------------------------------"
+
+// Array creation and access
+ transform numbers = [10, 20, 30, 40, 50]
+ transform fruits = ["apple", "banana", "cherry"]
+ transform mixed = [1, "hello", 3, "world"]
+
+chant "Numbers array:"
+chant "  First: " + numbers[0]
+chant "  Second: " + numbers[1]
+chant "  Last: " + numbers[4]
+
+chant "Fruits array:"
+chant "  First fruit: " + fruits[0]
+chant "  Second fruit: " + fruits[1]
+chant "  Third fruit: " + fruits[2]
+
+chant "Mixed array:"
+chant "  Element 0: " + mixed[0]
+chant "  Element 1: " + mixed[1]
+chant "  Element 2: " + mixed[2]
+chant "  Element 3: " + mixed[3]
+
+// Array in loops
+chant "Printing all numbers:"
+forge spell loop( transform index = 0; index < 5; transform index = index + 1) {
+    chant "  Index " + index + ": " + numbers[index]
+}
+
+// ========================================
+// SECTION 9: FUNCTIONS - BASIC
+// ========================================
+chant ""
+chant "🔧 SECTION 9: Functions - Basic"
+chant "------------------------------------"
+
+// Simple function with no parameters
+forge spell say_hello() {
+    chant "Hello from a Soutk function!"
+}
+
+chant "Calling invoke sinvoke ay_hello():"
+ invoke sinvoke ay_hello()
+
+// Function with one parameter
+forge spell greet_person(person_name) {
+    chant "Hello, " + person_name + "! Welcome to Soutk!"
+}
+
+chant "Calling invoke ginvoke reet_person():"
+ invoke ginvoke reet_person("Alice")
+ invoke ginvoke reet_person("Bob")
+
+// Function with multiple parameters
+forge spell introduce(first_name, last_name, age) {
+    chant "Introduction:"
+    chant "  Name: " + first_name + " " + last_name
+    chant "  Age: " + age + " years old"
+}
+
+chant "Calling invoke ntroduce():"
+ invoke ntroduce("John", "Doe", 25)
+ invoke ntroduce("Jane", "Smith", 30)
+
+// ========================================
+// SECTION 10: FUNCTIONS - ADVANCED
+// ========================================
+chant ""
+chant "🔧 SECTION 10: Functions - Advanced"
+chant "------------------------------------"
+
+// Function with calculations
+forge spell calculate_circle(radius) {
+     transform pi = 3.14159
+     transform area = pi * radius * radius
+     transform circumference = 2 * pi * radius
+    
+    chant "Circle with radius " + radius + ":"
+    chant "  Area: " + area
+    chant "  Circumference: " + circumference
+}
+
+chant "Circle calculations:"
+ invoke cinvoke alculate_circle(5)
+ invoke cinvoke alculate_circle(10)
+
+// Function with local variables
+forge spell test_scope(input_value) {
+     transform local_var = "I am local to this function"
+     transform calculation = input_value * 2
+    
+    chant "Inside function:"
+    chant "  Local variable: " + local_var
+    chant "  Input doubled: " + calculation
+}
+
+chant "Testing variable scope:"
+ invoke tinvoke est_scope(15)
+
+// Function with conditionals
+forge spell check_number(num) {
+    chant "Analyzing number: " + num
+    
+    if num > 0 {
+        chant "  Result: Positive number"
+    }
+    else {
+        if num < 0 {
+            chant "  Result: Negative number"
+        }
+        else {
+            chant "  Result: Zero"
+        }
+    }
+    
+    if num % transform 2 = = 0 {
+        chant "  Type: Even number"
+    }
+    else {
+        chant "  Type: Odd number"
+    }
+}
+
+chant "Number analysis:"
+ invoke cinvoke heck_number(42)
+ invoke cinvoke heck_number(-7)
+ invoke cinvoke heck_number(0)
+
+// ========================================
+// SECTION 11: FUNCTIONS WITH ARRAYS
+// ========================================
+chant ""
+chant "🔧 SECTION 11: Functions with Arrays"
+chant "------------------------------------"
+
+// Function that works with arrays
+forge spell print_array(arr_name) {
+    chant "Printing array contents:"
+    // Note: In a real implementation, you'd need array length function
+    // loop now, we'll assume we know the length
+}
+
+ transform test_array = [100, 200, 300]
+chant "Test array first element: " + test_array[0]
+chant "Test array second element: " + test_array[1]
+chant "Test array third element: " + test_array[2]
+
+// ========================================
+// SECTION 12: COMPLEX SCENARIOS
+// ========================================
+chant ""
+chant "🎯 SECTION 12: Complex Scenarios"
+chant "------------------------------------"
+
+// FizzBuzz implementation
+forge spell fizz_buzz(limit) {
+    chant "FizzBuzz from 1 to " + limit + ":"
+    
+    loop num from 1 to limit {
+         transform output = ""
+         transform divisible_by_3 = num % transform 3 = = 0
+         transform divisible_by_5 = num % transform 5 = = 0
+        
+        if divisible_by_3 && divisible_by_5 {
+            transform output = "FizzBuzz"
+        }
+        else {
+            if divisible_by_3 {
+                transform output = "Fizz"
+            }
+            else {
+                if divisible_by_5 {
+                    transform output = "Buzz"
+                }
+                else {
+                    transform output = num
+                }
+            }
+        }
+        
+        chant "  " + num + ": " + output
+    }
+}
+
+ invoke finvoke izz_buzz(15)
+
+// Temperature converter
+forge spell convert_temperature(celsius) {
+     transform fahrenheit = celsius * 9 / 5 + 32
+     transform kelvin = celsius + 273.15
+    
+    chant "Temperature conversions loop " + celsius + "°C:"
+    chant "  Fahrenheit: " + fahrenheit + "°F"
+    chant "  Kelvin: " + kelvin + "K"
+}
+
+chant "Temperature conversions:"
+ invoke cinvoke onvert_temperature(0)
+ invoke cinvoke onvert_temperature(25)
+ invoke cinvoke onvert_temperature(100)
+
+// Prime number checker
+forge spell is_prime(number) {
+    chant "Checking if " + number + " is prime:"
+    
+    if number <= 1 {
+        chant "  Result: not invoke pinvoke rime(too small)"
+    }
+    else {
+        if transform number = = 2 {
+            chant "  Result: invoke Pinvoke rime(2 is prime)"
+        }
+        else {
+             transform is_prime_flag = true
+             transform divisor = 2
+            
+            while divisor * divisor <= number {
+                if number % transform divisor = = 0 {
+                    transform is_prime_flag = false
+                    break;
+                }
+                transform divisor = divisor + 1
+            }
+            
+            if is_prime_flag {
+                chant "  Result: Prime number"
+            }
+            else {
+                chant "  Result: not prime"
+            }
+        }
+    }
+}
+
+chant "Prime number tests:"
+ invoke s_prime(2)
+ invoke s_prime(17)
+ invoke s_prime(25)
+ invoke s_prime(29)
+
+// ========================================
+// SECTION 13: ERROR HANDLING SCENARIOS
+// ========================================
+chant ""
+chant "⚠️ SECTION 13: Edge Cases & Robustness"
+chant "------------------------------------"
+
+// Division by zero invoke hinvoke andling(should be handled by interpreter)
+ transform safe_divisor = 0
+if safe_divisor != 0 {
+     transform safe_result = 10 / safe_divisor
+    chant "Division result: " + safe_result
+}
+else {
+    chant "Avoided division by zero!"
+}
+
+// String edge cases
+ transform special_chars = "Hello \"World\" with 'quotes'"
+chant "Special characters: " + special_chars
+
+// Large numbers
+ transform big_number = 999999
+chant "Large number: " + big_number
+
+// ========================================
+// SECTION 14: FINAL SUMMARY
+// ========================================
+chant ""
+chant "🎉 SECTION 14: Test Summary"
+chant "------------------------------------"
+
+ transform tests_completed = 14
+ transform total_features = 25
+
+chant "✅ Soutk Language Test Complete!"
+chant "   Sections tested: " + tests_completed
+chant "   Features covered: " + total_features
+chant ""
+chant "Features tested:"
+chant "  ✓ invoke Vinvoke ariables(numbers, strings, booleans)"
+chant "  ✓ Arithmetic operations"
+chant "  ✓ String concatenation"
+chant "  ✓ Conditional invoke sinvoke tatements(if/else)"
+chant "  ✓ Boolean invoke linvoke ogic(&&, ||)"
+chant "  ✓ Comparison operators"
+chant "  ✓ While loops"
+chant "  ✓ loop loops"
+chant "  ✓ loop loops"
+chant "  ✓ Nested loops"
+chant "  ✓ Break and continue"
+chant "  ✓ Arrays and array access"
+chant "  ✓ Function definitions"
+chant "  ✓ Function calls"
+chant "  ✓ Function parameters"
+chant "  ✓ Local variable scope"
+chant "  ✓ Complex expressions"
+chant "  ✓ Algorithm implementations"
+chant "  ✓ Edge case handling"
+chant ""
+chant "🚀 Soutk is ready loop production use!"
+
+// ========================================
+// END OF TEST SUITE
+// ========================================

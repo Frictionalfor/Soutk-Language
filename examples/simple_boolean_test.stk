@@ -1,0 +1,7 @@
+// Simple boolean test
+ transform result = (5 > 3);
+chant result;
+
+ transform text = "Result: ";
+ transform combined = text + result;
+chant combined;

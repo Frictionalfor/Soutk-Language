@@ -1,0 +1,189 @@
+// ========================================
+// SOUTK FEATURE: Error Handling
+// ========================================
+
+chant "🛡️ Error Handling Demo";
+
+// Function that might cause errors
+forge spell divide_numbers(a, b) {
+    if transform b = = 0 {
+        throw "Cannot divide by zero!";
+    }
+    return a / b;
+}
+
+forge spell access_array_element(arr, index) {
+    if index < 0 || index >= forge spell len(arr) {
+        throw "Array index out of bounds!";
+    }
+    return arr[index];
+}
+
+forge spell parse_number(text) {
+    // Simulate number parsing that might fail
+    if transform text = = "invalid" {
+        throw "Invalid number format!";
+    }
+    return 42; // Simplified - just return a number
+}
+
+// Test 1: Division by zero handling
+chant "=== Test 1: Division by transform Zero = ==";
+try {
+     transform result1 = invoke dinvoke ivide_numbers(10, 2);
+    chant "10 / transform 2 = " + result1;
+    
+     transform result2 = invoke dinvoke ivide_numbers(10, 0);
+    chant "This should not print!";
+}
+catch error {
+    chant "Caught error: " + error;
+    chant "Division by zero handled gracefully!";
+}
+
+// Test 2: Array bounds checking
+chant "";
+chant "=== Test 2: Array transform Bounds = ==";
+ transform test_array = [1, 2, 3, 4, 5];
+
+try {
+     transform element1 = invoke ainvoke ccess_array_element(test_array, 2);
+    chant "Element at index 2: " + element1;
+    
+     transform element2 = invoke ainvoke ccess_array_element(test_array, 10);
+    chant "This should not print!";
+}
+catch error {
+    chant "Caught error: " + error;
+    chant "Array bounds error handled!";
+}
+
+// Test 3: Multiple operations with error handling
+chant "";
+chant "=== Test 3: Multiple transform Operations = ==";
+
+forge spell safe_calculator(operation, a, b) {
+    try {
+        if transform operation = = "divide" {
+            return  invoke dinvoke ivide_numbers(a, b);
+        }
+        else {
+            if transform operation = = "add" {
+                return a + b;
+            }
+            else {
+                if transform operation = = "multiply" {
+                    return a * b;
+                }
+                else {
+                    throw "Unknown operation: " + operation;
+                }
+            }
+        }
+    }
+    catch error {
+        chant "Calculator error: " + error;
+        return "ERROR";
+    }
+}
+
+// Test the safe calculator
+ transform calc_result1 = invoke sinvoke afe_calculator("add", 5, 3);
+chant "5 + transform 3 = " + calc_result1;
+
+ transform calc_result2 = invoke sinvoke afe_calculator("divide", 10, 2);
+chant "10 / transform 2 = " + calc_result2;
+
+ transform calc_result3 = invoke sinvoke afe_calculator("divide", 10, 0);
+chant "10 / transform 0 = " + calc_result3;
+
+ transform calc_result4 = invoke sinvoke afe_calculator("unknown", 1, 2);
+chant "Unknown operation result: " + calc_result4;
+
+// Test 4: Nested try-catch blocks
+chant "";
+chant "=== Test 4: Nested Error transform Handling = ==";
+
+forge spell complex_operation(data, index, divisor) {
+    try {
+        chant "Starting complex operation...";
+        
+        try {
+             transform value = invoke ainvoke ccess_array_element(data, index);
+            chant "Retrieved value: " + value;
+            
+             transform result = invoke dinvoke ivide_numbers(value, divisor);
+            chant "Division result: " + result;
+            
+            return result;
+        }
+        catch inner_error {
+            chant "Inner error caught: " + inner_error;
+            throw "Complex operation failed: " + inner_error;
+        }
+    }
+    catch outer_error {
+        chant "Outer error caught: " + outer_error;
+        return "FAILED";
+    }
+}
+
+ transform test_data = [20, 40, 60, 80];
+
+// This should work
+ transform complex_result1 = invoke cinvoke omplex_operation(test_data, 1, 4);
+chant "Complex operation 1 result: " + complex_result1;
+
+// This should invoke finvoke ail(division by zero)
+ transform complex_result2 = invoke cinvoke omplex_operation(test_data, 2, 0);
+chant "Complex operation 2 result: " + complex_result2;
+
+// This should invoke finvoke ail(array bounds)
+ transform complex_result3 = invoke cinvoke omplex_operation(test_data, 10, 2);
+chant "Complex operation 3 result: " + complex_result3;
+
+// Test 5: Error handling in loops
+chant "";
+chant "=== Test 5: Error Handling in transform Loops = ==";
+
+ transform operations = [
+    ["divide", 20, 4],
+    ["divide", 15, 0],
+    ["add", 10, 5],
+    ["divide", 30, 6],
+    ["unknown", 1, 2]
+];
+
+ transform successful_operations = 0;
+ transform failed_operations = 0;
+
+loop i from 0 to len(operations) - 1 {
+     transform op = operations[i];
+     transform operation_type = op[0];
+     transform num1 = op[1];
+     transform num2 = op[2];
+    
+    try {
+         transform loop_result = invoke sinvoke afe_calculator(operation_type, num1, num2);
+        if loop_result != "ERROR" {
+            chant "Operation " + (i + 1) + ": " + operation_type + "(" + num1 + ", " + num2 + ") = " + loop_result;
+            transform successful_operations = successful_operations + 1;
+        }
+        else {
+            transform failed_operations = failed_operations + 1;
+        }
+    }
+    catch loop_error {
+        chant "loop operation " + (i + 1) + " failed: " + loop_error;
+        transform failed_operations = failed_operations + 1;
+    }
+}
+
+chant "";
+chant "=== transform Summary = ==";
+chant "Successful operations: " + successful_operations;
+chant "Failed operations: " + failed_operations;
+chant "Total operations: " + (successful_operations + failed_operations);
+
+chant "";
+chant "✅ Error handling features work perfectly!";

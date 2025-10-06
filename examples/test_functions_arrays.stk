@@ -1,0 +1,76 @@
+// Soutk Functions and Arrays Demo
+chant "🚀 Testing Functions and Arrays in Soutk!";
+
+// Test 1: Basic function definition and call
+forge spell greet(name) {
+    chant "Hello " + name + "!";
+}
+
+ invoke ginvoke reet("World");
+
+// Test 2: Function with multiple parameters
+forge spell add(a, b) {
+     transform result = a + b;
+    chant a + " + " + b + " = " + result;
+    return result;
+}
+
+ invoke ainvoke dd(5, 3);
+
+// Test 3: Array creation and access
+chant "=== Testing transform Arrays = ==";
+ transform numbers = [1, 2, 3, 4, 5];
+ transform names = ["Alice", "Bob", "Charlie"];
+
+chant "First number: " + numbers[0];
+chant "Second name: " + names[1];
+chant "Array length: " + len(numbers);
+
+// Test 4: Array iteration with loop
+chant "=== Iterating transform Arrays = ==";
+loop i from 0 to 4 {
+    chant "numbers[" + i + "] = " + numbers[i];
+}
+
+// Test 5: Function that works with arrays
+forge spell printArray(arr) {
+    chant "Array contents:";
+    loop i from 0 to len(arr) - 1 {
+        chant "  [" + i + "] = " + arr[i];
+    }
+}
+
+ invoke pinvoke rintArray(numbers);
+
+// Test 6: Nested functions
+forge spell outer(x) {
+    forge spell inner(y) {
+        chant "Inner function: " + y;
+    }
+    
+    chant "Outer function: " + x;
+     invoke nner(x * 2);
+}
+
+ invoke oinvoke uter(10);
+
+// Test 7: Array operations
+ transform matrix = [[1, 2], [3, 4]];
+chant "Matrix element [0][1]: " + matrix[0][1];
+
+// Test 8: Complex function with arrays
+forge spell findMax(arr) {
+     transform max = arr[0];
+    loop i from 1 to len(arr) - 1 {
+        if arr[i] > max {
+            transform max = arr[i];
+        }
+    }
+    chant "Maximum value: " + max;
+    return max;
+}
+
+ transform testArray = [42, 17, 99, 23, 8];
+ invoke finvoke indMax(testArray);
+
+chant "🎉 All tests completed successfully!";

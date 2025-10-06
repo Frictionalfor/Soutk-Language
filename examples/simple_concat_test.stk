@@ -1,0 +1,4 @@
+// Simple concatenation test
+ transform x = 10;
+ transform text = "Value: " + x;
+chant text;

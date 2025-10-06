@@ -1,0 +1,13 @@
+// Debug evaluation
+ transform x = 10;
+ transform y = 5;
+
+chant "transform x = " + x;
+chant "transform y = " + y;
+
+// Test direct evaluation
+ transform test1 = x < y;
+chant "x < transform y = " + test1;
+
+ transform test2 = x > y;
+chant "x > transform y = " + test2;

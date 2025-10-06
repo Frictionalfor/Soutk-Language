@@ -1,0 +1,4 @@
+chant "=== loop transform loop = ==";
+loop j from 1 to 10 {
+    chant "loop loop iteration: " + j;
+}

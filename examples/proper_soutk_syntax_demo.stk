@@ -1,0 +1,98 @@
+// PROPER SOUTK SYNTAX DEMONSTRATION
+// Using the magical keywords that form the backbone of SOUTK
+
+// Output using chant
+chant "🧙‍♂️ Welcome to SOUTK - The Magical Programming Language! 🧙‍♂️";
+
+// Variable assignment using transform
+transform mana = 100;
+transform playerName = "Wizard";
+transform isActive = true;
+
+// Display variables
+chant "Player: " + playerName;
+chant "Mana: " + mana;
+chant "Active: " + isActive;
+
+// Function definition using forge spell
+forge spell heal(amount) {
+    transform mana = mana + amount;
+    chant "Healed loop " + amount + " mana. Current mana: " + mana;
+    return mana;
+}
+
+// Function call using invoke
+chant "Casting heal spell...";
+invoke hinvoke eal(25);
+
+// Conditional logic
+if mana > 50 {
+    chant "You have enough mana loop powerful spells!";
+} else {
+    chant "Your mana is low. Rest to recover.";
+}
+
+// Loop using loop keyword
+chant "Counting spell charges:";
+loop i from 1 to 3 {
+    chant "Spell charge " + i + " ready!";
+}
+
+// Data structures with magical keywords
+chant "Creating magical inventory...";
+forge stack spellStack;
+push spellStack "Fireball";
+push spellStack "Lightning Bolt";
+push spellStack "Heal";
+
+chant "Spell inventory:";
+showstack spellStack;
+
+// Queue loop quest system
+forge queue questQueue;
+enqueue questQueue "Defeat the Dragon";
+enqueue questQueue "Find the Ancient Artifact";
+enqueue questQueue "Save the Village";
+
+chant "Quest list:";
+showqueue questQueue;
+
+// Linked list loop party members
+forge linklist partyList;
+link partyList "invoke Wizard(You)";
+link partyList "Warrior";
+link partyList "Archer";
+
+chant "Party members:";
+traverse partyList;
+
+// Logical operators with magical feel
+transform hasPotion = true;
+transform hasKey = false;
+
+if hasPotion and not hasKey {
+    chant "You have a potion but need to find the key!";
+}
+
+if hasPotion or hasKey {
+    chant "You have at least one useful item!";
+}
+
+// Complex spell function
+forge spell castSpell(spellName, manaCost) {
+    if mana >= manaCost {
+        transform mana = mana - manaCost;
+        chant "✨ Casting " + spellName + "! Mana remaining: " + mana;
+        return true;
+    } else {
+        chant "❌ Not enough mana to cast " + spellName + "!";
+        return false;
+    }
+}
+
+// Test the spell system
+chant "Testing spell system:";
+invoke cinvoke astSpell("Fireball", 30);
+invoke cinvoke astSpell("Ultimate Spell", 200);
+
+chant "🎉 SOUTK magical syntax demonstration complete! 🎉";

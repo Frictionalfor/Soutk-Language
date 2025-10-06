@@ -1,0 +1,34 @@
+// ========================================
+// SOUTK FEATURE: Basic Output & Variables
+// ========================================
+
+chant "🚀 Basic Output and Variables Demo";
+
+// Basic output
+chant "Hello, World!";
+chant "Welcome to Soutk!";
+
+// Variable declaration
+transform name = "Soutk User";
+transform age = 17;
+transform is_student = true;
+transform gpa = 4;
+
+// Output variables
+chant "Name: " + name;
+chant "Age: " + age;
+chant "Student: " + is_student;
+chant "GPA: " + gpa;
+
+// Data types demonstration
+transform integer_num = 42;
+transform float_num = 3.14159;
+transform string_text = "Programming is fun!";
+transform boolean_flag = false;
+
+chant "Integer: " + integer_num;
+chant "Float: " + float_num;
+chant "String: " + string_text;
+chant "Boolean: " + boolean_flag;
+
+chant "✅ Basic output and variables work perfectly!";

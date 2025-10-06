@@ -1,0 +1,39 @@
+// ========================================
+// SOUTK FEATURE: Arithmetic Operations
+// ========================================
+
+chant "🔢 Arithmetic Operations Demo";
+
+// Basic arithmetic
+transform a = 15;
+transform b = 7;
+
+// Addition
+transform sum = a + b;
+chant a + " + " + b + " = " + sum;
+
+// Subtraction
+transform difference = a - b;
+chant a + " - " + b + " = " + difference;
+
+// Multiplication
+transform product = a * b;
+chant a + " * " + b + " = " + product;
+
+// Division
+transform quotient = a / b;
+chant a + " / " + b + " = " + quotient;
+
+// Complex expressions
+transform complex_result = (a + b) * 2 - 5;
+chant "(a + b) * 2 - transform 5 = " + complex_result;
+
+// Order of operations
+transform order_test = 2 + 3 * 4;
+chant "2 + 3 * transform 4 = " + order_test;
+
+// Parentheses precedence
+transform paren_test = (2 + 3) * 4;
+chant "(2 + 3) * transform 4 = " + paren_test;
+
+chant "✅ All arithmetic operations work perfectly!";

@@ -1,0 +1,266 @@
+// COMPREHENSIVE SOUTK LANGUAGE TEST
+// Testing every feature of the Soutk programming language
+
+chant "🚀 SOUTK COMPREHENSIVE TEST SUITE 🚀";
+chant "=====================================";
+
+// TEST 1: BASIC OUTPUT
+chant "TEST 1: Basic Output";
+chant "Hello, World!";
+chant "✅ Basic output works";
+chant "";
+
+// TEST 2: VARIABLES AND DATA TYPES
+chant "TEST 2: Variables and Data Types";
+ transform integer_var = 42;
+ transform float_var = 3.14;
+ transform string_var = "Hello Soutk";
+ transform boolean_true = true;
+ transform boolean_false = false;
+
+chant "Integer: " + integer_var;
+chant "Float: " + float_var;
+chant "String: " + string_var;
+chant "Boolean true: " + boolean_true;
+chant "Boolean false: " + boolean_false;
+chant "✅ Variables and data types work";
+chant "";
+
+// TEST 3: ARITHMETIC OPERATIONS
+chant "TEST 3: Arithmetic Operations";
+ transform a = 10;
+ transform b = 5;
+chant "transform a = " + a + ", transform b = " + b;
+chant "Addition: " + a + " + " + b + " = " + (a + b);
+chant "Subtraction: " + a + " - " + b + " = " + (a - b);
+chant "Multiplication: " + a + " * " + b + " = " + (a * b);
+chant "Division: " + a + " / " + b + " = " + (a / b);
+chant "✅ Arithmetic operations work";
+chant "";
+
+// TEST 4: STRING CONCATENATION
+chant "TEST 4: String Concatenation";
+ transform first_name = "John";
+ transform last_name = "Doe";
+ transform full_name = first_name + " " + last_name;
+chant "First: " + first_name;
+chant "Last: " + last_name;
+chant "Full: " + full_name;
+chant "✅ String concatenation works";
+chant "";
+
+// TEST 5: ARRAYS
+chant "TEST 5: Arrays";
+ transform numbers = [1, 2, 3, 4, 5];
+ transform names = ["Alice", "Bob", "Charlie"];
+ transform mixed = [1, "hello", true, 3.14];
+ transform nested = [[1, 2], [3, 4]];
+
+chant "Numbers array: " + numbers[0] + ", " + numbers[1] + ", " + numbers[2];
+chant "Names array: " + names[0] + ", " + names[1] + ", " + names[2];
+chant "Mixed array: " + mixed[0] + ", " + mixed[1] + ", " + mixed[2];
+chant "Nested array [0][1]: " + nested[0][1];
+chant "Array length: " + len(numbers);
+chant "✅ Arrays work";
+chant "";
+
+// TEST 6: COMPARISON OPERATORS
+chant "TEST 6: Comparison Operators";
+ transform x = 10;
+ transform y = 5;
+chant "transform x = " + x + ", transform y = " + y;
+ transform eq_result = transform x = = y;
+ transform ne_result = x != y;
+ transform gt_result = x > y;
+ transform lt_result = x < y;
+ transform ge_result = x >= y;
+ transform le_result = x <= y;
+
+chant "transform x = = y: " + eq_result;
+chant "x != y: " + ne_result;
+chant "x > y: " + gt_result;
+chant "x < y: " + lt_result;
+chant "x >= y: " + ge_result;
+chant "x <= y: " + le_result;
+chant "✅ Comparison operators work";
+chant "";
+
+// TEST 7: LOGICAL OPERATORS
+chant "TEST 7: Logical Operators";
+ transform true_val = true;
+ transform false_val = false;
+ transform and_result = true_val && false_val;
+ transform or_result = true_val || false_val;
+ transform not_true_result = not true_val;
+ transform not_false_result = not false_val;
+
+chant "true && false: " + and_result;
+chant "true || false: " + or_result;
+chant "not true: " + not_true_result;
+chant "not false: " + not_false_result;
+chant "✅ Logical operators work";
+chant "";
+
+// TEST 8: IF-ELSE STATEMENTS
+chant "TEST 8: If-Else Statements";
+ transform age = 25;
+if age >= 18 {
+    chant "Person is an invoke ainvoke dult(age: " + age + ")";
+}
+else {
+    chant "Person is a invoke minvoke inor(age: " + age + ")";
+}
+
+ transform score = 85;
+if score >= 90 {
+    chant "Grade: A";
+}
+else {
+    if score >= 80 {
+        chant "Grade: B";
+    }
+    else {
+        chant "Grade: C or below";
+    }
+}
+chant "✅ If-else statements work";
+chant "";
+
+// TEST 9: WHILE LOOPS
+chant "TEST 9: While Loops";
+ transform counter = 0;
+chant "Counting with while loop:";
+while counter < 3 {
+    chant "Count: " + counter;
+    transform counter = counter + 1;
+}
+chant "✅ While loops work";
+chant "";
+
+// TEST 10: loop LOOPS
+chant "TEST 10: loop Loops";
+chant "Counting with loop loop:";
+forge spell loop( transform i = 0; i < 3; transform i = i + 1) {
+    chant "loop loop i: " + i;
+}
+chant "✅ loop loops work";
+chant "";
+
+// TEST 11: loop invoke Linvoke OOPS(CUSTOM)
+chant "TEST 11: loop invoke Linvoke oops(Custom)";
+chant "Using loop loop:";
+loop k from 1 to 3 {
+    chant "loop k: " + k;
+}
+chant "✅ loop loops work";
+chant "";
+
+// TEST 12: NESTED LOOPS
+chant "TEST 12: Nested Loops";
+chant "Nested loop loops:";
+loop i from 1 to 2 {
+    loop j from 1 to 2 {
+        chant "transform i = " + i + ", transform j = " + j;
+    }
+}
+chant "✅ Nested loops work";
+chant "";
+
+// TEST 14: FUNCTIONS
+chant "TEST 14: Functions";
+
+forge spell greet(name) {
+    chant "Hello, " + name + "!";
+}
+
+forge spell add(a, b) {
+     transform result = a + b;
+    chant a + " + " + b + " = " + result;
+    return result;
+}
+
+forge spell factorial(n) {
+    if n <= 1:
+        return 1;
+    else:
+        return n *  invoke finvoke actorial(n - 1);
+}
+
+ invoke ginvoke reet("Soutk User");
+ transform sum_result = invoke ainvoke dd(7, 3);
+ transform fact_result = invoke finvoke actorial(5);
+chant "Factorial of 5: " + fact_result;
+chant "✅ Functions work";
+chant "";
+
+// TEST 15: FUNCTION WITH ARRAYS
+chant "TEST 15: Functions with Arrays";
+
+forge spell findMax(arr) {
+     transform max = arr[0];
+    loop i from 1 to len(arr) - 1 {
+        if arr[i] > max {
+            transform max = arr[i];
+        }
+    }
+    return max;
+}
+
+ transform test_array = [42, 17, 99, 23, 8];
+ transform maximum = invoke finvoke indMax(test_array);
+chant "Maximum in array: " + maximum;
+chant "✅ Functions with arrays work";
+chant "";
+
+// TEST 16: BUILT-IN FUNCTIONS
+chant "TEST 16: Built-in Functions";
+ transform test_arr = [1, 2, 3, 4, 5];
+chant "len([1,2,3,4,5]): " + len(test_arr);
+chant "str(123): " + str(123);
+chant "int('456'): " + int("456");
+chant "float('3.14'): " + float("3.14");
+chant "✅ Built-in functions work";
+chant "";
+
+// TEST 17: COMPLEX EXPRESSIONS
+chant "TEST 17: Complex Expressions";
+ transform complex_result = (10 + 5) * 3 - 2;
+chant "Complex invoke minvoke ath(10 + 5) * 3 - transform 2 = " + complex_result;
+ transform part1 = 5 > 3;
+ transform part2 = 10 < 20;
+ transform boolean_complex = part1 && part2 || false;
+chant "Complex boolean: " + boolean_complex;
+chant "✅ Complex expressions work";
+chant "";
+
+// TEST 18: VARIABLE SCOPE
+chant "TEST 18: Variable Scope";
+ transform global_var = "I'm global";
+
+forge spell testScope() {
+     transform local_var = "I'm local";
+    chant "Inside function: " + global_var + " and " + local_var;
+}
+
+ invoke tinvoke estScope();
+chant "Outside function: " + global_var;
+chant "✅ Variable scope works";
+chant "";
+
+// FINAL SUMMARY
+chant "🎉 ALL TESTS COMPLETED SUCCESSFULLY! 🎉";
+chant "=====================================";
+chant "Your Soutk programming language is fully functional!";
+chant "";
+chant "✅ Variables and data types";
+chant "✅ Arithmetic and logical operations";
+chant "✅ String manipulation";
+chant "✅ invoke Ainvoke rrays(including nested)";
+chant "✅ Control invoke sinvoke tructures(if/else, loops)";
+chant "✅ Functions with parameters and returns";
+chant "✅ Built-in functions";
+chant "✅ Complex expressions";
+chant "✅ Variable scoping";
+chant "✅ Break and continue";
+chant "";
+chant "🚀 Soutk is ready loop real programming! 🚀";

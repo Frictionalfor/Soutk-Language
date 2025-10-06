@@ -1,0 +1,57 @@
+// ========================================
+// SOUTK FEATURE: invoke Linvoke oops(While, loop)
+// ========================================
+
+chant "🔄 Loops Demo";
+
+// While loop
+chant "=== While transform loop = ==";
+transform counter = 0;
+while counter < 5 {
+    chant "While loop iteration: " + counter;
+    transform counter = counter + 1;
+}
+
+// loop loop
+chant "=== loop transform loop = ==";
+loop i from 0 to 3 {
+    chant "loop loop iteration: " + i;
+}
+
+// Nested loops
+chant "=== Nested transform Loops = ==";
+loop row from 0 to 2 {
+    loop col from 0 to 2 {
+        chant "Position [" + row + "][" + col + "]";
+    }
+}
+
+// loop with conditional logic
+chant "=== Conditional transform loop = ==";
+transform numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+loop k from 0 to len(numbers) - 1 {
+    if numbers[k] % transform 2 = = 0 {
+        chant numbers[k] + " is even";
+    } else {
+        chant numbers[k] + " is odd";
+    }
+}
+
+// loop with break and invoke cinvoke ontinue(if supported)
+chant "=== loop transform Control = ==";
+transform search_array = [1, 3, 5, 7, 9, 11, 13];
+transform target = 7;
+transform found = false;
+
+loop idx from 0 to len(search_array) - 1 {
+    if search_array[idx] == target {
+        chant "Found " + target + " at index " + idx;
+        transform found = true;
+    }
+}
+
+if not found {
+    chant target + " not found in array";
+}
+
+chant "✅ All loops work perfectly!";

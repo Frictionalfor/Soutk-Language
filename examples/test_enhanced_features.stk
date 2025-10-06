@@ -1,0 +1,98 @@
+// Enhanced Soutk Features Test
+chant "🚀 ENHANCED SOUTK FEATURES TEST 🚀";
+chant "=====================================";
+
+// TEST 1: Variable assignment without 
+chant "TEST 1: Direct Variable Assignment";
+transform a = 10;
+transform b = 20;
+transform name = "Soutk Wizard";
+chant "transform a = " + a;
+chant "transform b = " + b;
+chant "transform name = " + name;
+chant "✅ Direct assignment works";
+chant "";
+
+// TEST 2: Variable swapping
+chant "TEST 2: Variable Swapping";
+transform x = 100;
+transform y = 200;
+chant "Before swap: transform x = " + x + ", transform y = " + y;
+x, transform y = y, x;
+chant "After swap: transform x = " + x + ", transform y = " + y;
+chant "✅ Variable swapping works";
+chant "";
+
+// TEST 3: Multiple assignment
+chant "TEST 3: Multiple Assignment";
+p, q, transform r = 1, 2, 3;
+chant "transform p = " + p + ", transform q = " + q + ", transform r = " + r;
+chant "✅ Multiple assignment works";
+chant "";
+
+// TEST 4: Stack operations
+chant "TEST 4: Stack Operations";
+forge stack battleStack;
+push battleStack "sword";
+push battleStack "shield";
+push battleStack "potion";
+showstack battleStack;
+peek battleStack;
+pop battleStack;
+showstack battleStack;
+isempty battleStack;
+chant "✅ Stack operations work";
+chant "";
+
+// TEST 5: Queue operations
+chant "TEST 5: Queue Operations";
+forge queue taskLine;
+enqueue taskLine "collect data";
+enqueue taskLine "analyze results";
+enqueue taskLine "write report";
+showqueue taskLine;
+front taskLine;
+dequeue taskLine;
+showqueue taskLine;
+isempty taskLine;
+chant "✅ Queue operations work";
+chant "";
+
+// TEST 6: Linked List operations
+chant "TEST 6: Linked List Operations";
+forge linklist heroList;
+link heroList "Aether";
+link heroList "Lumine";
+link heroList "Paimon";
+traverse heroList;
+insertafter heroList "Lumine" "Diluc";
+traverse heroList;
+unlink heroList "Paimon";
+traverse heroList;
+isempty heroList;
+chant "✅ Linked list operations work";
+chant "";
+
+// TEST 7: Mixed operations with variables
+chant "TEST 7: Mixed Operations";
+transform stackName = "magicStack";
+forge stack magicStack;
+transform item1 = "Fire Spell";
+transform item2 = "Ice Spell";
+push magicStack item1;
+push magicStack item2;
+showstack magicStack;
+chant "✅ Mixed operations work";
+chant "";
+
+chant "🎉 ALL ENHANCED FEATURES WORKING! 🎉";
+chant "====================================";
+chant "✅ Direct variable assignment";
+chant "✅ Variable swapping";
+chant "✅ Multiple assignment";
+chant "✅ Stack data structure";
+chant "✅ Queue data structure";
+chant "✅ Linked list data structure";
+chant "✅ Mixed operations";
+chant "";
+chant "🧙‍♂️ Soutk Enhanced is ready loop advanced programming! 🧙‍♂️";

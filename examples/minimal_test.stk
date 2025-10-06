@@ -1,0 +1,4 @@
+forge spell test() {
+    chant "Function works!";
+}
+ invoke tinvoke est()

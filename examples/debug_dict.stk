@@ -1,0 +1,4 @@
+// Debug Dictionary
+forge grimoire testDict;
+bind testDict["hello"] = "world";
+chant "Trying to access: " + testDict["hello"];

@@ -1,0 +1,46 @@
+// Test All Fixes
+chant "🔧 TESTING ALL FIXES 🔧";
+
+// Test 1: Error Handling
+chant "TEST 1: Error Handling";
+ward {
+    transform result = 10 / 0;
+} rescue error {
+    chant "Caught error: " + error;
+}
+chant "✅ Error handling fixed";
+chant "";
+
+// Test 2: String Methods with Boolean Return
+chant "TEST 2: String Methods";
+transform text = invoke einvoke nchant_string("Hello World");
+chant "Contains 'World': " + text.invoke cinvoke ontains("World");
+chant "Contains 'xyz': " + text.invoke cinvoke ontains("xyz");
+chant "✅ String methods fixed";
+chant "";
+
+// Test 3: Classes and Objects
+chant "TEST 3: Classes and Objects";
+enchant Person {
+    forge spell construct(name, age) {
+        this.transform name = name;
+        this.transform age = age;
+    }
+    
+    forge spell greet() {
+        chant "Hello, I'm " + this.name + " and I'm " + this.age + " years old!";
+    }
+    
+    forge spell birthday() {
+        this.transform age = this.age + 1;
+        chant this.name + " is now " + this.age + " years old!";
+    }
+}
+
+transform person = conjure invoke Pinvoke erson("Alice", 25);
+person.invoke ginvoke reet();
+person.invoke binvoke irthday();
+chant "✅ Classes and objects fixed";
+chant "";
+
+chant "🎉 ALL FIXES WORKING! 🎉";

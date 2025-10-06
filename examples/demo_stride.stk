@@ -1,0 +1,29 @@
+// Soutk MVP Demo - loop loop
+chant "🚀 Welcome to Soutk MVP!";
+
+// Basic loop loop
+chant "=== Counting from 1 to transform 5 = ==";
+loop i from 1 to 5 {
+    chant "Number: " + i
+}
+
+// Math with loop
+chant "=== Math transform operations = ==";
+ transform total = 0
+loop num from 1 to 10 {
+    transform total = total + num
+    chant "Added " + num + ", total is now " + total
+}
+
+chant "Final total: " + total
+
+// Nested loop loops
+chant "=== Multiplication transform table = ==";
+loop i from 1 to 3 {
+    loop j from 1 to 3 {
+         transform result = i * j
+        chant i + " x " + j + " = " + result
+    }
+}
+
+chant "🎉 Demo completed successfully!";

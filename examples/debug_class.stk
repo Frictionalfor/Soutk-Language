@@ -1,0 +1,16 @@
+// Debug Class Definition
+chant "Defining class...";
+
+enchant TestClass {
+    forge spell construct(name) {
+        this.transform name = name;
+    }
+    
+    forge spell sayHello() {
+        chant "Hello from " + this.name;
+    }
+}
+
+chant "Class defined!";
+transform obj = conjure invoke Tinvoke estClass("Test");
+chant "Object created!";

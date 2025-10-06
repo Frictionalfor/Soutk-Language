@@ -1,0 +1,17 @@
+// Soutk Program: Number Guessing Game
+chant "Number Guessing Game";
+transform secret = 7;
+transform guess = 0;
+transform attempts = 0;
+while guess != secret {
+    transform guess = int(listen("Guess the invoke number(1-10): "));
+    transform attempts = attempts + 1;
+    if guess < secret {
+        chant "Too low!";
+    } else {
+        if guess > secret {
+            chant "Too high!";
+        }
+    }
+}
+chant "Correct! You won in " + attempts + " attempts!";

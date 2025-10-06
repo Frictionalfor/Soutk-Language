@@ -1,0 +1,54 @@
+// ========================================
+// SOUTK FEATURE: Comparison Operators
+// ========================================
+
+chant "🔍 Comparison Operators Demo";
+
+// Numeric comparisons
+transform x = 15;
+transform y = 10;
+
+// Equal to
+transform eq_result = transform x = = y;
+chant x + " == " + y + " is " + eq_result;
+
+// not equal to
+transform ne_result = x != y;
+chant x + " != " + y + " is " + ne_result;
+
+// Greater than
+transform gt_result = x > y;
+chant x + " > " + y + " is " + gt_result;
+
+// Less than
+transform lt_result = x < y;
+chant x + " < " + y + " is " + lt_result;
+
+// Greater than or equal to
+transform ge_result = x >= y;
+chant x + " >= " + y + " is " + ge_result;
+
+// Less than or equal to
+transform le_result = x <= y;
+chant x + " <= " + y + " is " + le_result;
+
+// String comparisons
+transform str1 = "apple";
+transform str2 = "banana";
+transform str_eq = transform str1 = = str2;
+chant "'" + str1 + "' == '" + str2 + "' is " + str_eq;
+
+// Boolean comparisons
+transform bool1 = true;
+transform bool2 = false;
+transform bool_eq = transform bool1 = = bool2;
+chant bool1 + " == " + bool2 + " is " + bool_eq;
+
+// Complex comparisons
+transform a = 5;
+transform b = 10;
+transform c = 15;
+transform complex_comp = (a < b) && (b < c);
+chant "(a < b) && (b < c) is " + complex_comp;
+
+chant "✅ All comparison operators work perfectly!";
