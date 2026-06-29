@@ -4,18 +4,309 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soutk Online Compiler</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: #2a2a2a;
+            padding: 12px 24px;
+            border-bottom: 1px solid #404040;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 { font-size: 1.3rem; color: #fff; font-weight: 600; }
+        
+        .badge {
+            background: #007acc;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .container {
+            display: flex;
+            height: calc(100vh - 50px);
+        }
+        
+        .panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #404040;
+        }
+        
+        .panel:last-child { border-right: none; }
+        
+        .panel-header {
+            background: #252526;
+            padding: 8px 16px;
+            border-bottom: 1px solid #404040;
+            font-size: 0.85rem;
+            color: #aaa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .editor {
+            flex: 1;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border: none;
+            padding: 16px;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.5;
+            resize: none;
+            outline: none;
+        }
+        
+        .output {
+            flex: 1;
+            background: #1e1e1e;
+            padding: 16px;
+            overflow-y: auto;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .output-line {
+            margin: 2px 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .error { color: #e74c3c; }
+        .success { color: #2ecc71; }
+        
+        .toolbar {
+            background: #2d2d2d;
+            padding: 8px 16px;
+            border-top: 1px solid #404040;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        button {
+            background: #0e639c;
+            color: #fff;
+            border: none;
+            padding: 7px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        button:hover { background: #1177bb; }
+        button:disabled { background: #555; cursor: not-allowed; }
+        
+        select {
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: 1px solid #555;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.8rem;
+        }
+        
+        .status {
+            font-size: 0.8rem;
+            color: #888;
+            margin-left: auto;
+        }
+        
+        .hint {
+            font-size: 0.75rem;
+            color: #666;
+            padding: 4px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .panel { height: 50vh; border-right: none; border-bottom: 1px solid #404040; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="soutk_logo.png" alt="Soutk Logo" class="logo">
-        <span class="brand">Soutk Online Compiler</span>
-    </nav>
+    <header>
+        <h1>Soutk Online Compiler</h1>
+        <span class="badge">v1.0.0</span>
+    </header>
+    
     <div class="container">
-        <textarea id="code" placeholder="Write your Soutk code here..."></textarea>
-        <button id="runBtn">Run</button>
-        <div id="output" class="output"></div>
+        <div class="panel">
+            <div class="panel-header">
+                <span>soutk_code.stk</span>
+            </div>
+            <textarea id="editor" class="editor" spellcheck="false" placeholder="Enter your Soutk code here...">chant "Hello, World!";</textarea>
+            <div class="toolbar">
+                <select id="examples" onchange="loadExample()">
+                    <option value="">-- Load Example --</option>
+                    <option value="hello">Hello World</option>
+                    <option value="variables">Variables</option>
+                    <option value="functions">Functions</option>
+                    <option value="classes">Classes (OOP)</option>
+                    <option value="loops">Loops</option>
+                    <option value="conditions">Conditions</option>
+                    <option value="data">Data Structures</option>
+                    <option value="advanced">Advanced RPG</option>
+                </select>
+                <button id="runBtn" onclick="runCode()">Run</button>
+                <button onclick="clearAll()">Clear</button>
+                <span id="status" class="status">Ready</span>
+            </div>
+            <div class="hint">Ctrl+Enter to run</div>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-header">
+                <span>Output</span>
+            </div>
+            <div id="output" class="output"></div>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const outputEl = document.getElementById('output');
+        const statusEl = document.getElementById('status');
+        const runBtn = document.getElementById('runBtn');
+
+        const examples = {
+            hello: 'chant "Hello, World!";',
+            variables: `transform name = "Soutk";
+transform level = 50;
+chant "Name: " + name;
+chant "Level: " + level;`,
+            functions: `forge spell greet(who) {
+    chant "Hello, " + who + "!";
+}
+invoke greet("Wizard");`,
+            classes: `enchant Wizard {
+    forge construct(name, power) {
+        this.transform name = name;
+        this.transform power = power;
+    }
+    forge spell castSpell(spellName) {
+        chant this.name + " casts " + spellName + "!";
+    }
+}
+transform gandalf = conjure Wizard("Gandalf", 100);
+gandalf.castSpell("Fireball");`,
+            loops: `loop i from 1 to 3 {
+    chant "Iteration " + i;
+}`,
+            conditions: `transform x = 10;
+if x > 5 {
+    chant "x is greater than 5";
+} else {
+    chant "x is not greater than 5";`,
+            data: `forge stack myStack;
+push myStack "first";
+push myStack "second";
+showstack myStack;
+
+forge grimoire inventory;
+bind inventory["gold"] = 100;
+chant "Gold: " + inventory["gold"];`,
+            advanced: `enchant Character {
+    forge construct(name, health) {
+        this.transform name = name;
+        this.transform health = health;
+    }
+    forge spell heal() {
+        this.transform health = this.health + 10;
+        chant this.name + " healed. HP: " + this.health;
+    }
+}
+transform hero = conjure Character("Aether", 20);
+hero.heal();`
+        };
+
+        function loadExample() {
+            const key = document.getElementById('examples').value;
+            if (key && examples[key]) {
+                editor.value = examples[key];
+            }
+        }
+
+        function clearAll() {
+            editor.value = '';
+            outputEl.innerHTML = '';
+            statusEl.textContent = 'Ready';
+        }
+
+        async function runCode() {
+            const code = editor.value;
+            outputEl.innerHTML = '<div class="output-line info">Running...</div>';
+            statusEl.textContent = 'Running...';
+            runBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/run', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code })
+                });
+
+                const result = await response.json();
+                outputEl.innerHTML = '';
+
+                if (result.output) {
+                    result.output.split('\n').forEach(line => {
+                        const div = document.createElement('div');
+                        div.className = 'output-line';
+                        div.textContent = line;
+                        outputEl.appendChild(div);
+                    });
+                }
+
+                if (result.error) {
+                    const div = document.createElement('div');
+                    div.className = 'output-line error';
+                    div.textContent = result.error;
+                    outputEl.appendChild(div);
+                    statusEl.textContent = 'Error';
+                } else {
+                    statusEl.textContent = 'Completed';
+                }
+            } catch (err) {
+                outputEl.innerHTML = '<div class="output-line error">Failed to connect to server</div>';
+                statusEl.textContent = 'Offline';
+            } finally {
+                runBtn.disabled = false;
+            }
+        }
+
+        editor.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCode();
+            }
+            // Tab support
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const start = editor.selectionStart;
+                const end = editor.selectionEnd;
+                editor.value = editor.value.substring(0, start) + '    ' + editor.value.substring(end);
+                editor.selectionStart = editor.selectionEnd = start + 4;
+            }
+        });
+    </script>
 </body>
 </html>

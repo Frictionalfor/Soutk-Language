@@ -2,7 +2,7 @@
 // SOUTK FEATURE: User Input
 // ========================================
 
-chant "📥 User Input Demo";
+chant " User Input Demo";
 
 // Basic input without prompt
 chant "Please enter your name:";
@@ -67,4 +67,4 @@ if transform operation = = "+" {
     }
 }
 
-chant "✅ All user input features work perfectly!";
+chant " All user input features work perfectly!";

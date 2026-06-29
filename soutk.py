@@ -21,7 +21,7 @@ from soutk_interpreter import SoutkInterpreter
 def print_help():
     """Print help information"""
     print("""
-🧙‍♂️ Soutk Programming Language
+ Soutk Programming Language
 
 Usage:
     python soutk.py <program.stk>     Run a Soutk program
@@ -46,7 +46,7 @@ def list_examples():
     """List available example programs"""
     examples_dir = Path("examples")
     if examples_dir.exists():
-        print("📚 Available Example Programs:")
+        print(" Available Example Programs:")
         print("=" * 40)
         
         examples = sorted(examples_dir.glob("*.stk"))
@@ -56,12 +56,12 @@ def list_examples():
         print("\nRun an example with:")
         print(f"  python soutk.py examples/{examples[0].name if examples else 'hello.stk'}")
     else:
-        print("❌ Examples directory not found")
+        print(" Examples directory not found")
 
 def main():
     """Main entry point"""
     if len(sys.argv) < 2:
-        print("❌ Error: No program file specified")
+        print(" Error: No program file specified")
         print("Use 'python soutk.py --help' for usage information")
         sys.exit(1)
     
@@ -84,13 +84,13 @@ def main():
     try:
         file_path = Path(filename)
         if not file_path.exists():
-            print(f"❌ Error: File '{filename}' not found.")
+            print(f" Error: File '{filename}' not found.")
             sys.exit(1)
         
         with open(file_path, "r", encoding='utf-8') as f:
             code = f.read()
         
-        print(f"🚀 Running Soutk program: {filename}")
+        print(f" Running Soutk program: {filename}")
         print("=" * 50)
         
         interpreter = SoutkInterpreter()
@@ -98,13 +98,13 @@ def main():
         interpreter.execute(code)
         
         print("=" * 50)
-        print("✅ Program completed successfully!")
+        print(" Program completed successfully!")
         
     except KeyboardInterrupt:
-        print("\n⚠️ Program interrupted by user")
+        print("\n Program interrupted by user")
         sys.exit(1)
     except Exception as e:
-        print(f"💥 Fatal error: {str(e)}")
+        print(f" Fatal error: {str(e)}")
         sys.exit(1)
 
 if __name__ == "__main__":

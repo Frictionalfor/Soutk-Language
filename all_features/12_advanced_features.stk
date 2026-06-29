@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Advanced Features
 // ========================================
 
-chant "🚀 Advanced Features Demo";
+chant " Advanced Features Demo";
 
 // Complex nested data structures
 transform student_records = [
@@ -94,4 +94,4 @@ forge spell findTopStudents(students, threshold) {
 chant "=== Finding Top transform Students = ==";
 transform result = invoke finvoke indTopStudents(student_records, 85);
 
-chant "✅ All advanced features work perfectly!";
+chant " All advanced features work perfectly!";

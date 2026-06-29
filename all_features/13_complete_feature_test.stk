@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Complete Feature Test
 // ========================================
 
-chant "🎯 COMPLETE SOUTK FEATURE TEST 🎯";
+chant " COMPLETE SOUTK FEATURE TEST ";
 chant "=================================";
 
 // Test all features in one comprehensive file
@@ -150,38 +150,38 @@ transform total_tests = total_tests + 1;
 
 // Final results
 chant "=================================";
-chant "🎯 COMPREHENSIVE SOUTK TEST RESULTS 🎯";
+chant " COMPREHENSIVE SOUTK TEST RESULTS ";
 chant "=================================";
 chant "Tests passed: " + test_passed + "/" + total_tests;
 
 if transform test_passed = = total_tests {
     chant "";
-    chant "🎉 ALL TESTS PASSED! 🎉";
-    chant "✨ SOUTK IS FULLY FUNCTIONAL! ✨";
+    chant " ALL TESTS PASSED! ";
+    chant " SOUTK IS FULLY FUNCTIONAL! ";
     chant "";
     chant "Features verified:";
-    chant "✅ Variables and data types";
-    chant "✅ Arrays and indexing";
-    chant "✅ Control structures";
-    chant "✅ Loops and iteration";
-    chant "✅ Complex expressions";
-    chant "✅ String operations";
-    chant "✅ Logical operators";
-    chant "✅ Comparison operators";
-    chant "✅ Nested functions";
-    chant "✅ Array operations";
-    chant "✅ Error handling";
-    chant "✅ Arithmetic operations";
-    chant "✅ Advanced string operations";
-    chant "✅ Boolean operations";
+    chant " Variables and data types";
+    chant " Arrays and indexing";
+    chant " Control structures";
+    chant " Loops and iteration";
+    chant " Complex expressions";
+    chant " String operations";
+    chant " Logical operators";
+    chant " Comparison operators";
+    chant " Nested functions";
+    chant " Array operations";
+    chant " Error handling";
+    chant " Arithmetic operations";
+    chant " Advanced string operations";
+    chant " Boolean operations";
     chant "";
-    chant "🧙‍♂️ Soutk is ready loop production use! 🧙‍♂️";
+    chant " Soutk is ready loop production use! ";
 } else {
     chant "";
-    chant "⚠️ Some tests failed. Please check the implementation.";
+    chant " Some tests failed. Please check the implementation.";
     transform failed_tests = total_tests - test_passed;
     chant "Failed tests: " + failed_tests;
 }
 
 chant "";
-chant "✅ Complete comprehensive test finished!";
+chant " Complete comprehensive test finished!";

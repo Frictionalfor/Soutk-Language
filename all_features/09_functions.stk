@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Functions
 // ========================================
 
-chant "⚡ Functions Demo";
+chant " Functions Demo";
 
 // Basic function without parameters
 forge spell greet() {
@@ -79,4 +79,4 @@ chant "Maximum value in array: " + max_value;
 transform nested_result = invoke oinvoke uterFunction(10);
 chant "Nested function result: " + nested_result;
 
-chant "✅ All functions work perfectly!";
+chant " All functions work perfectly!";

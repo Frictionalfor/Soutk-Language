@@ -12,31 +12,31 @@ The interpreter will be implemented as a class-based system with clear separatio
 
 ```
 SoutkInterpreter (Main Class)
-├── Core Execution Engine
-│   ├── Line-by-line execution
-│   ├── Expression evaluation
-│   └── Error handling with line numbers
-├── Variable Management
-│   ├── Variable storage and retrieval
-│   ├── Scope management for functions
-│   └── Type handling (strings, numbers, booleans, arrays)
-├── Function System
-│   ├── Function definition parsing
-│   ├── Parameter handling and validation
-│   ├── Return value management
-│   └── Local scope isolation
-├── Data Structures
-│   ├── Stack operations (forge, push, pop, peek)
-│   ├── Queue operations (forge, enqueue, dequeue, front)
-│   └── Linked List operations (forge, link, unlink, traverse)
-├── Control Flow
-│   ├── Conditional statements (if/else)
-│   ├── Loop constructs (while, for)
-│   └── Conditional expressions
-└── I/O Operations
-    ├── User input (listen command)
-    ├── Output (speak command)
-    └── String interpolation
+ Core Execution Engine
+    Line-by-line execution
+    Expression evaluation
+    Error handling with line numbers
+ Variable Management
+    Variable storage and retrieval
+    Scope management for functions
+    Type handling (strings, numbers, booleans, arrays)
+ Function System
+    Function definition parsing
+    Parameter handling and validation
+    Return value management
+    Local scope isolation
+ Data Structures
+    Stack operations (forge, push, pop, peek)
+    Queue operations (forge, enqueue, dequeue, front)
+    Linked List operations (forge, link, unlink, traverse)
+ Control Flow
+    Conditional statements (if/else)
+    Loop constructs (while, for)
+    Conditional expressions
+ I/O Operations
+     User input (listen command)
+     Output (speak command)
+     String interpolation
 ```
 
 ### Data Structure Classes

@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Control invoke Sinvoke tructures(If-Else)
 // ========================================
 
-chant "🎯 Control Structures Demo";
+chant " Control Structures Demo";
 
 // Simple if statement
 transform age = 18;
@@ -59,4 +59,4 @@ if user_age >= 18 && has_permission {
     chant "Access denied!";
 }
 
-chant "✅ All control structures work perfectly!";
+chant " All control structures work perfectly!";

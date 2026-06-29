@@ -1,14 +1,14 @@
-# 🎯 Soutk Language - Complete Feature Index
+#  Soutk Language - Complete Feature Index
 
-## 🚀 Quick Start
+##  Quick Start
 Run the comprehensive test first:
 ```bash
 python soutk.py all_features/13_complete_feature_test.stk
 ```
 
-## 📚 Feature Categories
+##  Feature Categories
 
-### 🔰 **Beginner Features**
+###  **Beginner Features**
 | File | Description | Key Concepts |
 |------|-------------|--------------|
 | `01_basic_output_variables.stk` | Variables and output | `summon`, `chant`, data types |
@@ -16,7 +16,7 @@ python soutk.py all_features/13_complete_feature_test.stk
 | `03_string_operations.stk` | String handling | Concatenation, indexing |
 | `04_arrays.stk` | Array basics | Creation, indexing, `len()` |
 
-### 🎯 **Intermediate Features**
+###  **Intermediate Features**
 | File | Description | Key Concepts |
 |------|-------------|--------------|
 | `05_comparison_operators.stk` | Comparisons | `==`, `!=`, `<`, `>`, `<=`, `>=` |
@@ -27,7 +27,7 @@ python soutk.py all_features/13_complete_feature_test.stk
 | `10_user_input.stk` | Interactive programs | `listen` command |
 | `11_built_in_functions.stk` | Built-in utilities | `len()`, `str()`, `typeof()` |
 
-### 🚀 **Advanced Features**
+###  **Advanced Features**
 | File | Description | Key Concepts |
 |------|-------------|--------------|
 | `12_advanced_features.stk` | Complex logic | Nested structures, algorithms |
@@ -35,12 +35,12 @@ python soutk.py all_features/13_complete_feature_test.stk
 | `15_error_handling.stk` | Error management | `try`, `catch`, `throw` |
 | `16_modern_features.stk` | Latest features | Higher-order functions, patterns |
 
-### 🧪 **Testing & Validation**
+###  **Testing & Validation**
 | File | Description | Purpose |
 |------|-------------|---------|
 | `13_complete_feature_test.stk` | Comprehensive test | Validates all features work |
 
-## 🎓 **Learning Path**
+##  **Learning Path**
 
 ### **Phase 1: Fundamentals** (Files 01-04)
 - Learn basic syntax and data types
@@ -70,9 +70,9 @@ python soutk.py all_features/13_complete_feature_test.stk
 - Verify all features work
 - Confirm language mastery
 
-## 🎯 **Feature Checklist**
+##  **Feature Checklist**
 
-### ✅ **Core Language Features**
+###  **Core Language Features**
 - [x] Variables (`summon`)
 - [x] Output (`chant`)
 - [x] Data types (number, string, boolean, array)
@@ -87,7 +87,7 @@ python soutk.py all_features/13_complete_feature_test.stk
 - [x] User input (`listen`)
 - [x] Built-in functions
 
-### ✅ **Advanced Features**
+###  **Advanced Features**
 - [x] Object-oriented programming
 - [x] Classes and inheritance
 - [x] Error handling (`try`/`catch`)
@@ -97,14 +97,14 @@ python soutk.py all_features/13_complete_feature_test.stk
 - [x] Type checking
 - [x] Performance optimizations
 
-### ✅ **Modern Features**
+###  **Modern Features**
 - [x] Functional programming concepts
 - [x] Advanced string manipulation
 - [x] Data structure implementations
 - [x] Memory management
 - [x] Comprehensive error handling
 
-## 🏆 **Mastery Goals**
+##  **Mastery Goals**
 
 After completing all files, you should be able to:
 
@@ -115,12 +115,12 @@ After completing all files, you should be able to:
 5. **Handle errors gracefully** with try-catch blocks
 6. **Apply modern programming concepts** like higher-order functions
 
-## 🎉 **Completion Certificate**
+##  **Completion Certificate**
 
 Once you've successfully run all feature files and the comprehensive test passes, you've mastered the Soutk programming language! 
 
-**Congratulations, you're now a Soutk wizard!** 🧙‍♂️✨
+**Congratulations, you're now a Soutk wizard!** 
 
 ---
 
-*Happy coding with Soutk! 🚀*
+*Happy coding with Soutk! *

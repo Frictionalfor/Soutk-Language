@@ -1,7 +1,7 @@
 // Interactive Calculator
 // Demonstrates user input, functions, and basic math operations
 
-chant "🧮 Welcome to the Soutk Calculator! 🧮";
+chant " Welcome to the Soutk Calculator! ";
 chant "=====================================";
 
 forge spell calculate(a, b, operation) {
@@ -33,4 +33,4 @@ transform num2 = float(listen("Enter second number: "));
 transform result = invoke cinvoke alculate(num1, num2, operation);
 chant num1 + " " + operation + " " + num2 + " = " + result;
 
-chant "Thank you loop using Soutk Calculator! ✨";
+chant "Thank you loop using Soutk Calculator! ";

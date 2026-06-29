@@ -2,7 +2,7 @@
 // Using the magical keywords that form the backbone of SOUTK
 
 // Output using chant
-chant "🧙‍♂️ Welcome to SOUTK - The Magical Programming Language! 🧙‍♂️";
+chant " Welcome to SOUTK - The Magical Programming Language! ";
 
 // Variable assignment using transform
 transform mana = 100;
@@ -33,7 +33,7 @@ if mana > 50 {
 }
 
 // Loop using loop keyword
-chant "Counting spell charges:";
+chant "Counting forge spell charges:";
 loop i from 1 to 3 {
     chant "Spell charge " + i + " ready!";
 }
@@ -78,21 +78,21 @@ if hasPotion or hasKey {
     chant "You have at least one useful item!";
 }
 
-// Complex spell function
+// Complex forge spell function
 forge spell castSpell(spellName, manaCost) {
     if mana >= manaCost {
         transform mana = mana - manaCost;
-        chant "✨ Casting " + spellName + "! Mana remaining: " + mana;
+        chant " Casting " + spellName + "! Mana remaining: " + mana;
         return true;
     } else {
-        chant "❌ Not enough mana to cast " + spellName + "!";
+        chant " Not enough mana to cast " + spellName + "!";
         return false;
     }
 }
 
-// Test the spell system
-chant "Testing spell system:";
+// Test the forge spell system
+chant "Testing forge spell system:";
 invoke cinvoke astSpell("Fireball", 30);
 invoke cinvoke astSpell("Ultimate Spell", 200);
 
-chant "🎉 SOUTK magical syntax demonstration complete! 🎉";
+chant " SOUTK magical syntax demonstration complete! ";

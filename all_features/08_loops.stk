@@ -2,7 +2,7 @@
 // SOUTK FEATURE: invoke Linvoke oops(While, loop)
 // ========================================
 
-chant "🔄 Loops Demo";
+chant " Loops Demo";
 
 // While loop
 chant "=== While transform loop = ==";
@@ -54,4 +54,4 @@ if not found {
     chant target + " not found in array";
 }
 
-chant "✅ All loops work perfectly!";
+chant " All loops work perfectly!";

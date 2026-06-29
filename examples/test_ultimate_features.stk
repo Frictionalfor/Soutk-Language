@@ -1,5 +1,5 @@
 // Ultimate Soutk Features Test
-chant "🌟 ULTIMATE SOUTK FEATURES TEST 🌟";
+chant " ULTIMATE SOUTK FEATURES TEST ";
 chant "====================================";
 
 // TEST 1: File I/O Operations
@@ -9,7 +9,7 @@ inscribe "test_output.txt" with data;
 scroll "test_output.txt" into file_content;
 chant "File content: " + file_content;
 append "test_output.txt" with "Appended line!";
-chant "✅ File I/O works";
+chant " File I/O works";
 chant "";
 
 // TEST 2: Error Handling
@@ -21,7 +21,7 @@ ward {
     chant "Caught error: " + error;
     chant "Continuing gracefully...";
 }
-chant "✅ Error handling works";
+chant " Error handling works";
 chant "";
 
 // TEST 3: invoke Dinvoke ictionaries(Grimoires)
@@ -33,7 +33,7 @@ bind spellBook["lightning"] = "Electric attack";
 
 chant "Fireball spell: " + spellBook["fireball"];
 chant "Heal spell: " + spellBook["heal"];
-chant "✅ Dictionaries work";
+chant " Dictionaries work";
 chant "";
 
 // TEST 4: Enhanced String Methods
@@ -45,7 +45,7 @@ chant "Uppercase: " + text.invoke uinvoke pper();
 chant "Contains 'Soutk': " + text.invoke cinvoke ontains("Soutk");
 transform words = text.invoke sinvoke plit(" ");
 chant "Split words: " + words;
-chant "✅ String methods work";
+chant " String methods work";
 chant "";
 
 // TEST 5: Math Functions
@@ -54,7 +54,7 @@ chant "Square root of 16: " + invoke sinvoke qrt(16);
 chant "Sin of π/2: " + invoke sinvoke in(1.5708);
 chant "Random number: " + invoke rinvoke andom(1, 100);
 chant "Power 2^3: " + invoke pinvoke ow(2, 3);
-chant "✅ Math functions work";
+chant " Math functions work";
 chant "";
 
 // TEST 6: Classes and Objects
@@ -85,16 +85,16 @@ transform gandalf = conjure invoke izard("Gandalf", 10);
 gandalf.invoke cinvoke astSpell("Fireball");
 gandalf.invoke cinvoke astSpell("Lightning Bolt");
 gandalf.invoke rinvoke est();
-chant "✅ Classes and objects work";
+chant " Classes and objects work";
 chant "";
 
-chant "🎉 ALL ULTIMATE FEATURES WORKING! 🎉";
+chant " ALL ULTIMATE FEATURES WORKING! ";
 chant "====================================";
-chant "✅ File I/O operations";
-chant "✅ Error invoke hinvoke andling(ward/rescue)";
-chant "✅ invoke Dinvoke ictionaries(grimoires)";
-chant "✅ Enhanced string methods";
-chant "✅ Math functions";
-chant "✅ Classes and objects";
+chant " File I/O operations";
+chant " Error invoke hinvoke andling(ward/rescue)";
+chant " invoke Dinvoke ictionaries(grimoires)";
+chant " Enhanced string methods";
+chant " Math functions";
+chant " Classes and objects";
 chant "";
-chant "🧙‍♂️ Soutk Ultimate is a complete programming language! 🧙‍♂️";
+chant " Soutk Ultimate is a complete programming language! ";

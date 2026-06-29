@@ -2,7 +2,7 @@
 
 This directory contains example programs demonstrating various features of the Soutk programming language.
 
-## 📁 Example Categories
+##  Example Categories
 
 ### **Basic Examples**
 - `hello.stk` - Simple hello world program
@@ -12,7 +12,7 @@ This directory contains example programs demonstrating various features of the S
 
 ### **Control Structures**
 - `conditionals.stk` - If/else statements
-- `loops_demo.stk` - While, for, and stride loops
+- `loops_demo.stk` - While, for, and loop loops
 - `break_continue.stk` - Loop control statements
 
 ### **Functions**
@@ -50,7 +50,7 @@ This directory contains example programs demonstrating various features of the S
 - `performance_test.stk` - Performance benchmarking
 - `edge_cases.stk` - Edge case testing
 
-## 🚀 Running Examples
+##  Running Examples
 
 To run any example:
 
@@ -60,7 +60,7 @@ python soutk.py examples/calculator.stk
 python soutk.py examples/rpg_character.stk
 ```
 
-## 📚 Learning Path
+##  Learning Path
 
 **Beginners:**
 1. Start with `hello.stk`
@@ -79,17 +79,17 @@ python soutk.py examples/rpg_character.stk
 2. Complex systems like `inventory_system.stk`
 3. Game development with `rpg_character.stk`
 
-## 🎯 Example Highlights
+##  Example Highlights
 
 ### Interactive Calculator
 ```soutk
 // From calculator.stk
 enchant Calculator {
-    spell construct() {
+    forge spell construct() {
         this.result = 0;
     }
     
-    spell calculate(a, b, operation) {
+    forge spell calculate(a, b, operation) {
         if operation == "+" {
             this.result = a + b;
         } else if operation == "-" {

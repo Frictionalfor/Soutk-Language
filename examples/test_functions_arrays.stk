@@ -1,5 +1,5 @@
 // Soutk Functions and Arrays Demo
-chant "🚀 Testing Functions and Arrays in Soutk!";
+chant " Testing Functions and Arrays in Soutk!";
 
 // Test 1: Basic function definition and call
 forge spell greet(name) {
@@ -73,4 +73,4 @@ forge spell findMax(arr) {
  transform testArray = [42, 17, 99, 23, 8];
  invoke finvoke indMax(testArray);
 
-chant "🎉 All tests completed successfully!";
+chant " All tests completed successfully!";

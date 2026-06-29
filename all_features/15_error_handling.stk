@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Error Handling
 // ========================================
 
-chant "🛡️ Error Handling Demo";
+chant " Error Handling Demo";
 
 // Function that might cause errors
 forge spell divide_numbers(a, b) {
@@ -186,4 +186,4 @@ chant "Failed operations: " + failed_operations;
 chant "Total operations: " + (successful_operations + failed_operations);
 
 chant "";
-chant "✅ Error handling features work perfectly!";
+chant " Error handling features work perfectly!";

@@ -2,7 +2,7 @@
 // SOUTK FEATURE: String Operations
 // ========================================
 
-chant "📝 String Operations Demo";
+chant " String Operations Demo";
 
 // String concatenation
 transform first_name = "Frictionalfor";
@@ -37,4 +37,4 @@ transform is_active = true;
 transform status = "Account status: " + is_active;
 chant status;
 
-chant "✅ All string operations work perfectly!";
+chant " All string operations work perfectly!";

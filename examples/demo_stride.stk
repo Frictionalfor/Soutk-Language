@@ -1,5 +1,5 @@
 // Soutk MVP Demo - loop loop
-chant "🚀 Welcome to Soutk MVP!";
+chant " Welcome to Soutk MVP!";
 
 // Basic loop loop
 chant "=== Counting from 1 to transform 5 = ==";
@@ -26,4 +26,4 @@ loop i from 1 to 3 {
     }
 }
 
-chant "🎉 Demo completed successfully!";
+chant " Demo completed successfully!";

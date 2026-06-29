@@ -1,9 +1,9 @@
 // Comprehensive Data Structures Demo
-chant "⚔️ SOUTK DATA STRUCTURES BATTLE ARENA ⚔️";
+chant " SOUTK DATA STRUCTURES BATTLE ARENA ";
 chant "==========================================";
 
 // STACK DEMO - Weapon Inventory
-chant "🗡️ WEAPON STACK DEMO";
+chant " WEAPON STACK DEMO";
 chant "-------------------";
 forge stack weaponStack;
 push weaponStack "Iron Sword";
@@ -27,7 +27,7 @@ showstack weaponStack;
 chant "";
 
 // QUEUE DEMO - Quest System
-chant "📋 QUEST QUEUE DEMO";
+chant " QUEST QUEUE DEMO";
 chant "------------------";
 forge queue questQueue;
 enqueue questQueue "Defeat the Goblin King";
@@ -51,7 +51,7 @@ showqueue questQueue;
 chant "";
 
 // LINKED LIST DEMO - Party Members
-chant "🔗 PARTY LINKED LIST DEMO";
+chant " PARTY LINKED LIST DEMO";
 chant "------------------------";
 forge linklist partyList;
 link partyList "invoke arrior(Tank)";
@@ -75,7 +75,7 @@ traverse partyList;
 chant "";
 
 // ADVANCED DEMO - Using variables with data structures
-chant "🧙‍♂️ ADVANCED MAGIC DEMO";
+chant " ADVANCED MAGIC DEMO";
 chant "----------------------";
 
 // Create forge spell components stack
@@ -125,12 +125,12 @@ chant "Known spells:";
 traverse knownSpells;
 
 chant "";
-chant "🎉 DATA STRUCTURES MASTERY ACHIEVED! 🎉";
+chant " DATA STRUCTURES MASTERY ACHIEVED! ";
 chant "=======================================";
 chant "Your magical arsenal is now complete!";
-chant "⚔️ Weapons organized in stack";
-chant "📋 Quests queued loop completion";
-chant "🔗 Party members linked together";
-chant "🧙‍♂️ Magic components ready loop use";
+chant " Weapons organized in stack";
+chant " Quests queued loop completion";
+chant " Party members linked together";
+chant " Magic components ready loop use";
 chant "";
-chant "Ready loop epic adventures! 🌟";
+chant "Ready loop epic adventures! ";

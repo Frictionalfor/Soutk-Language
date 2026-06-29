@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Arrays
 // ========================================
 
-chant "📊 Arrays Demo";
+chant " Arrays Demo";
 
 // Basic array creation
 transform numbers = [1, 2, 3, 4, 5];
@@ -43,4 +43,4 @@ transform data = [
 chant "Jane's age: " + data[1][1];
 chant "Mike's job: " + data[2][2];
 
-chant "✅ All array operations work perfectly!";
+chant " All array operations work perfectly!";

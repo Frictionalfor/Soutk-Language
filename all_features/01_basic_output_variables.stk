@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Basic Output & Variables
 // ========================================
 
-chant "🚀 Basic Output and Variables Demo";
+chant " Basic Output and Variables Demo";
 
 // Basic output
 chant "Hello, World!";
@@ -31,4 +31,4 @@ chant "Float: " + float_num;
 chant "String: " + string_text;
 chant "Boolean: " + boolean_flag;
 
-chant "✅ Basic output and variables work perfectly!";
+chant " Basic output and variables work perfectly!";

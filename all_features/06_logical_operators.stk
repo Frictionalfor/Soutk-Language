@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Logical Operators
 // ========================================
 
-chant "🧠 Logical Operators Demo";
+chant " Logical Operators Demo";
 
 // Basic logical operations
 transform true_val = true;
@@ -56,4 +56,4 @@ chant "invoke ninvoke ot(p && q) = " + demorgan1;
 chant "(not p) || (not q) = " + demorgan2;
 chant "De Morgan's Law: " + (transform demorgan1 = = demorgan2);
 
-chant "✅ All logical operators work perfectly!";
+chant " All logical operators work perfectly!";

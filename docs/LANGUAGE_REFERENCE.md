@@ -82,7 +82,7 @@ single_quotes = 'Also valid';
 empty = "";
 
 // Enhanced strings with methods
-enhanced_text = enchant_string("Hello World");
+enhanced_text = scroll("Hello World");
 length = enhanced_text.length();
 upper = enhanced_text.upper();
 ```
@@ -174,14 +174,14 @@ for (initialization; condition; increment) {
 
 ### Stride Loops (Custom Loop)
 ```soutk
-stride variable from start_value to end_value {
+loop variable from start_value to end_value {
     // statements
 }
 ```
 
 ### Break and Continue
 ```soutk
-stride i from 1 to 10 {
+loop i from 1 to 10 {
     if i == 3:
         continue;    // Skip iteration
     if i == 8:
@@ -196,7 +196,7 @@ stride i from 1 to 10 {
 
 ### Function Definition
 ```soutk
-spell function_name(parameter1, parameter2) {
+forge spell function_name(parameter1, parameter2) {
     // function body
     return value;  // optional
 }
@@ -204,21 +204,21 @@ spell function_name(parameter1, parameter2) {
 
 ### Function Call
 ```soutk
-cast function_name(argument1, argument2);
+invoke function_name(argument1, argument2);
 ```
 
 ### Examples
 ```soutk
-spell greet(name) {
+forge spell greet(name) {
     chant "Hello, " + name + "!";
 }
 
-spell add(a, b) {
+forge spell add(a, b) {
     return a + b;
 }
 
-cast greet("World");
-result = cast add(5, 3);
+invoke greet("World");
+result = invoke add(5, 3);
 ```
 
 ---
@@ -245,12 +245,12 @@ element = matrix[0][1];  // Gets 2
 ### Class Definition
 ```soutk
 enchant ClassName {
-    spell construct(param1, param2) {
+    forge spell construct(param1, param2) {
         this.property1 = param1;
         this.property2 = param2;
     }
     
-    spell methodName(param) {
+    forge spell methodName(param) {
         // method body
         return value;
     }
@@ -267,16 +267,16 @@ property_value = object.property1;
 ### Example
 ```soutk
 enchant Person {
-    spell construct(name, age) {
+    forge spell construct(name, age) {
         this.name = name;
         this.age = age;
     }
     
-    spell greet() {
+    forge spell greet() {
         chant "Hello, I'm " + this.name;
     }
     
-    spell birthday() {
+    forge spell birthday() {
         this.age = this.age + 1;
     }
 }
@@ -417,7 +417,7 @@ chant "Hello, World!";
 
 #### Interactive Program
 ```soutk
-name = listen("What's your name? ");
+name = listen("What is your name? ");
 age = int(listen("How old are you? "));
 
 if age >= 18 {
@@ -430,16 +430,16 @@ if age >= 18 {
 #### Class Example
 ```soutk
 enchant Calculator {
-    spell construct() {
+    forge spell construct() {
         this.result = 0;
     }
     
-    spell add(a, b) {
+    forge spell add(a, b) {
         this.result = a + b;
         return this.result;
     }
     
-    spell getResult() {
+    forge spell getResult() {
         return this.result;
     }
 }

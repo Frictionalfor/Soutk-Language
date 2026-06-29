@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Comparison Operators
 // ========================================
 
-chant "🔍 Comparison Operators Demo";
+chant " Comparison Operators Demo";
 
 // Numeric comparisons
 transform x = 15;
@@ -51,4 +51,4 @@ transform c = 15;
 transform complex_comp = (a < b) && (b < c);
 chant "(a < b) && (b < c) is " + complex_comp;
 
-chant "✅ All comparison operators work perfectly!";
+chant " All comparison operators work perfectly!";

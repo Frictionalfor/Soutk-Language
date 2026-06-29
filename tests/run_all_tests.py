@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 def run_test(test_file, description):
     """Run a single test file"""
-    print(f"🧪 Testing: {description}")
+    print(f" Testing: {description}")
     print(f"   File: {test_file}")
     
     try:
@@ -25,19 +25,19 @@ def run_test(test_file, description):
         ], capture_output=True, text=True, cwd=os.path.dirname(__file__))
         
         if result.returncode == 0:
-            print("   ✅ PASSED")
+            print("    PASSED")
             return True
         else:
-            print("   ❌ FAILED")
+            print("    FAILED")
             print(f"   Error: {result.stderr}")
             return False
     except Exception as e:
-        print(f"   💥 ERROR: {str(e)}")
+        print(f"    ERROR: {str(e)}")
         return False
 
 def main():
     """Run all tests"""
-    print("🚀 Soutk Programming Language Test Suite")
+    print(" Soutk Programming Language Test Suite")
     print("=" * 50)
     
     tests = [
@@ -62,17 +62,17 @@ def main():
             if run_test(test_path, description):
                 passed += 1
         else:
-            print(f"⚠️  Test file not found: {test_path}")
+            print(f"  Test file not found: {test_path}")
         print()
     
     print("=" * 50)
-    print(f"📊 Test Results: {passed}/{total} tests passed")
+    print(f" Test Results: {passed}/{total} tests passed")
     
     if passed == total:
-        print("🎉 All tests passed! Soutk is working perfectly!")
+        print(" All tests passed! Soutk is working perfectly!")
         return 0
     else:
-        print(f"❌ {total - passed} tests failed. Please check the issues above.")
+        print(f" {total - passed} tests failed. Please check the issues above.")
         return 1
 
 if __name__ == "__main__":

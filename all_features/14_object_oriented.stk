@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Object-Oriented Programming
 // ========================================
 
-chant "🏗️ Object-Oriented Programming Demo";
+chant " Object-Oriented Programming Demo";
 
 // Define a class
 class Person {
@@ -100,18 +100,18 @@ class Student extends Person {
             chant "Average: " + avg;
             
             if avg >= 90 {
-                chant "Performance: Excellent! 🌟";
+                chant "Performance: Excellent! ";
             }
             else {
                 if avg >= 80 {
-                    chant "Performance: Good! 👍";
+                    chant "Performance: Good! ";
                 }
                 else {
                     if avg >= 70 {
-                        chant "Performance: Average 📚";
+                        chant "Performance: Average ";
                     }
                     else {
-                        chant "Performance: Needs improvement 📖";
+                        chant "Performance: Needs improvement ";
                     }
                 }
             }
@@ -168,4 +168,4 @@ chant person1.name + " is a " + person1.invoke ginvoke et_age_group();
 chant student1.name + " is a " + student1.invoke ginvoke et_age_group();
 
 chant "";
-chant "✅ Object-Oriented Programming features work perfectly!";
+chant " Object-Oriented Programming features work perfectly!";

@@ -2,7 +2,7 @@
 // SOUTK FEATURE: Modern Language Features
 // ========================================
 
-chant "🌟 Modern Soutk Features Demo";
+chant " Modern Soutk Features Demo";
 
 // Advanced array operations and list comprehensions
 chant "=== Advanced Array transform Operations = ==";
@@ -319,13 +319,13 @@ forge spell performance_test() {
 
 chant "";
 chant "=== Modern Features transform Summary = ==";
-chant "✅ Advanced array operations";
-chant "✅ Higher-order functions";
-chant "✅ Advanced string manipulation";
-chant "✅ Data structure implementations";
-chant "✅ Pattern matching simulation";
-chant "✅ Performance optimizations";
-chant "✅ Functional programming concepts";
+chant " Advanced array operations";
+chant " Higher-order functions";
+chant " Advanced string manipulation";
+chant " Data structure implementations";
+chant " Pattern matching simulation";
+chant " Performance optimizations";
+chant " Functional programming concepts";
 
 chant "";
-chant "🌟 All modern Soutk features work perfectly!";
+chant " All modern Soutk features work perfectly!";

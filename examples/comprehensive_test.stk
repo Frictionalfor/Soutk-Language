@@ -1,13 +1,13 @@
 // COMPREHENSIVE SOUTK LANGUAGE TEST
 // Testing every feature of the Soutk programming language
 
-chant "🚀 SOUTK COMPREHENSIVE TEST SUITE 🚀";
+chant " SOUTK COMPREHENSIVE TEST SUITE ";
 chant "=====================================";
 
 // TEST 1: BASIC OUTPUT
 chant "TEST 1: Basic Output";
 chant "Hello, World!";
-chant "✅ Basic output works";
+chant " Basic output works";
 chant "";
 
 // TEST 2: VARIABLES AND DATA TYPES
@@ -23,7 +23,7 @@ chant "Float: " + float_var;
 chant "String: " + string_var;
 chant "Boolean true: " + boolean_true;
 chant "Boolean false: " + boolean_false;
-chant "✅ Variables and data types work";
+chant " Variables and data types work";
 chant "";
 
 // TEST 3: ARITHMETIC OPERATIONS
@@ -35,7 +35,7 @@ chant "Addition: " + a + " + " + b + " = " + (a + b);
 chant "Subtraction: " + a + " - " + b + " = " + (a - b);
 chant "Multiplication: " + a + " * " + b + " = " + (a * b);
 chant "Division: " + a + " / " + b + " = " + (a / b);
-chant "✅ Arithmetic operations work";
+chant " Arithmetic operations work";
 chant "";
 
 // TEST 4: STRING CONCATENATION
@@ -46,7 +46,7 @@ chant "TEST 4: String Concatenation";
 chant "First: " + first_name;
 chant "Last: " + last_name;
 chant "Full: " + full_name;
-chant "✅ String concatenation works";
+chant " String concatenation works";
 chant "";
 
 // TEST 5: ARRAYS
@@ -61,7 +61,7 @@ chant "Names array: " + names[0] + ", " + names[1] + ", " + names[2];
 chant "Mixed array: " + mixed[0] + ", " + mixed[1] + ", " + mixed[2];
 chant "Nested array [0][1]: " + nested[0][1];
 chant "Array length: " + len(numbers);
-chant "✅ Arrays work";
+chant " Arrays work";
 chant "";
 
 // TEST 6: COMPARISON OPERATORS
@@ -82,7 +82,7 @@ chant "x > y: " + gt_result;
 chant "x < y: " + lt_result;
 chant "x >= y: " + ge_result;
 chant "x <= y: " + le_result;
-chant "✅ Comparison operators work";
+chant " Comparison operators work";
 chant "";
 
 // TEST 7: LOGICAL OPERATORS
@@ -98,7 +98,7 @@ chant "true && false: " + and_result;
 chant "true || false: " + or_result;
 chant "not true: " + not_true_result;
 chant "not false: " + not_false_result;
-chant "✅ Logical operators work";
+chant " Logical operators work";
 chant "";
 
 // TEST 8: IF-ELSE STATEMENTS
@@ -123,7 +123,7 @@ else {
         chant "Grade: C or below";
     }
 }
-chant "✅ If-else statements work";
+chant " If-else statements work";
 chant "";
 
 // TEST 9: WHILE LOOPS
@@ -134,7 +134,7 @@ while counter < 3 {
     chant "Count: " + counter;
     transform counter = counter + 1;
 }
-chant "✅ While loops work";
+chant " While loops work";
 chant "";
 
 // TEST 10: loop LOOPS
@@ -143,7 +143,7 @@ chant "Counting with loop loop:";
 forge spell loop( transform i = 0; i < 3; transform i = i + 1) {
     chant "loop loop i: " + i;
 }
-chant "✅ loop loops work";
+chant " loop loops work";
 chant "";
 
 // TEST 11: loop invoke Linvoke OOPS(CUSTOM)
@@ -152,7 +152,7 @@ chant "Using loop loop:";
 loop k from 1 to 3 {
     chant "loop k: " + k;
 }
-chant "✅ loop loops work";
+chant " loop loops work";
 chant "";
 
 // TEST 12: NESTED LOOPS
@@ -163,7 +163,7 @@ loop i from 1 to 2 {
         chant "transform i = " + i + ", transform j = " + j;
     }
 }
-chant "✅ Nested loops work";
+chant " Nested loops work";
 chant "";
 
 // TEST 14: FUNCTIONS
@@ -190,7 +190,7 @@ forge spell factorial(n) {
  transform sum_result = invoke ainvoke dd(7, 3);
  transform fact_result = invoke finvoke actorial(5);
 chant "Factorial of 5: " + fact_result;
-chant "✅ Functions work";
+chant " Functions work";
 chant "";
 
 // TEST 15: FUNCTION WITH ARRAYS
@@ -209,7 +209,7 @@ forge spell findMax(arr) {
  transform test_array = [42, 17, 99, 23, 8];
  transform maximum = invoke finvoke indMax(test_array);
 chant "Maximum in array: " + maximum;
-chant "✅ Functions with arrays work";
+chant " Functions with arrays work";
 chant "";
 
 // TEST 16: BUILT-IN FUNCTIONS
@@ -219,7 +219,7 @@ chant "len([1,2,3,4,5]): " + len(test_arr);
 chant "str(123): " + str(123);
 chant "int('456'): " + int("456");
 chant "float('3.14'): " + float("3.14");
-chant "✅ Built-in functions work";
+chant " Built-in functions work";
 chant "";
 
 // TEST 17: COMPLEX EXPRESSIONS
@@ -230,7 +230,7 @@ chant "Complex invoke minvoke ath(10 + 5) * 3 - transform 2 = " + complex_result
  transform part2 = 10 < 20;
  transform boolean_complex = part1 && part2 || false;
 chant "Complex boolean: " + boolean_complex;
-chant "✅ Complex expressions work";
+chant " Complex expressions work";
 chant "";
 
 // TEST 18: VARIABLE SCOPE
@@ -244,23 +244,23 @@ forge spell testScope() {
 
  invoke tinvoke estScope();
 chant "Outside function: " + global_var;
-chant "✅ Variable scope works";
+chant " Variable scope works";
 chant "";
 
 // FINAL SUMMARY
-chant "🎉 ALL TESTS COMPLETED SUCCESSFULLY! 🎉";
+chant " ALL TESTS COMPLETED SUCCESSFULLY! ";
 chant "=====================================";
 chant "Your Soutk programming language is fully functional!";
 chant "";
-chant "✅ Variables and data types";
-chant "✅ Arithmetic and logical operations";
-chant "✅ String manipulation";
-chant "✅ invoke Ainvoke rrays(including nested)";
-chant "✅ Control invoke sinvoke tructures(if/else, loops)";
-chant "✅ Functions with parameters and returns";
-chant "✅ Built-in functions";
-chant "✅ Complex expressions";
-chant "✅ Variable scoping";
-chant "✅ Break and continue";
+chant " Variables and data types";
+chant " Arithmetic and logical operations";
+chant " String manipulation";
+chant " invoke Ainvoke rrays(including nested)";
+chant " Control invoke sinvoke tructures(if/else, loops)";
+chant " Functions with parameters and returns";
+chant " Built-in functions";
+chant " Complex expressions";
+chant " Variable scoping";
+chant " Break and continue";
 chant "";
-chant "🚀 Soutk is ready loop real programming! 🚀";
+chant " Soutk is ready loop real programming! ";

@@ -3,14 +3,14 @@
 // Testing all language features systematically
 // ========================================
 
-chant "🚀 SOUTK COMPREHENSIVE TEST SUITE"
+chant " SOUTK COMPREHENSIVE TEST SUITE"
 chant "======================================"
 
 // ========================================
 // SECTION 1: BASIC VARIABLES & DATA TYPES
 // ========================================
 chant ""
-chant "📊 SECTION 1: Variables & Data Types"
+chant " SECTION 1: Variables & Data Types"
 chant "------------------------------------"
 
 // Numbers
@@ -42,7 +42,7 @@ chant "Disabled: " + is_disabled
 // SECTION 2: ARITHMETIC OPERATIONS
 // ========================================
 chant ""
-chant "🧮 SECTION 2: Arithmetic Operations"
+chant " SECTION 2: Arithmetic Operations"
 chant "------------------------------------"
 
  transform a = 15
@@ -65,7 +65,7 @@ chant "Complex: (" + a + " + " + b + ") * 2 - transform 10 = " + complex_expr
 // SECTION 3: CONDITIONAL STATEMENTS
 // ========================================
 chant ""
-chant "🔀 SECTION 3: Conditional Statements"
+chant " SECTION 3: Conditional Statements"
 chant "------------------------------------"
 
 // Simple if-else
@@ -94,10 +94,10 @@ else {
  transform can_drive = has_license && age_check >= 16
 
 if can_drive {
-    chant "✅ Can drive legally"
+    chant " Can drive legally"
 }
 else {
-    chant "❌ Cannot drive"
+    chant " Cannot drive"
 }
 
 // Comparison operators
@@ -116,7 +116,7 @@ if x != y {
 // SECTION 4: LOOPS - WHILE
 // ========================================
 chant ""
-chant "🔄 SECTION 4: While Loops"
+chant " SECTION 4: While Loops"
 chant "------------------------------------"
 
 // Basic while loop
@@ -126,7 +126,7 @@ while countdown > 0 {
     chant "  " + countdown + "..."
     transform countdown = countdown - 1
 }
-chant "🚀 Liftoff!"
+chant " Liftoff!"
 
 // While with break/continue
  transform counter = 0
@@ -149,7 +149,7 @@ while counter < 10 {
 // SECTION 5: LOOPS - loop
 // ========================================
 chant ""
-chant "🔄 SECTION 5: loop Loops"
+chant " SECTION 5: loop Loops"
 chant "------------------------------------"
 
 // Basic loop loop
@@ -176,7 +176,7 @@ forge spell loop( transform even = 2; even <= 10; transform even = even + 2) {
 // SECTION 6: LOOPS - loop
 // ========================================
 chant ""
-chant "🔄 SECTION 6: loop Loops"
+chant " SECTION 6: loop Loops"
 chant "------------------------------------"
 
 chant "loop from 1 to 5"
@@ -194,7 +194,7 @@ loop multiplier from 1 to 10 {
 // SECTION 7: NESTED LOOPS
 // ========================================
 chant ""
-chant "🔄 SECTION 7: Nested Loops"
+chant " SECTION 7: Nested Loops"
 chant "------------------------------------"
 
 chant "Multiplication invoke tinvoke able(3x3):"
@@ -220,7 +220,7 @@ loop line from 1 to 4 {
 // SECTION 8: ARRAYS
 // ========================================
 chant ""
-chant "📚 SECTION 8: Arrays"
+chant " SECTION 8: Arrays"
 chant "------------------------------------"
 
 // Array creation and access
@@ -254,7 +254,7 @@ forge spell loop( transform index = 0; index < 5; transform index = index + 1) {
 // SECTION 9: FUNCTIONS - BASIC
 // ========================================
 chant ""
-chant "🔧 SECTION 9: Functions - Basic"
+chant " SECTION 9: Functions - Basic"
 chant "------------------------------------"
 
 // Simple function with no parameters
@@ -289,7 +289,7 @@ chant "Calling invoke ntroduce():"
 // SECTION 10: FUNCTIONS - ADVANCED
 // ========================================
 chant ""
-chant "🔧 SECTION 10: Functions - Advanced"
+chant " SECTION 10: Functions - Advanced"
 chant "------------------------------------"
 
 // Function with calculations
@@ -353,7 +353,7 @@ chant "Number analysis:"
 // SECTION 11: FUNCTIONS WITH ARRAYS
 // ========================================
 chant ""
-chant "🔧 SECTION 11: Functions with Arrays"
+chant " SECTION 11: Functions with Arrays"
 chant "------------------------------------"
 
 // Function that works with arrays
@@ -372,7 +372,7 @@ chant "Test array third element: " + test_array[2]
 // SECTION 12: COMPLEX SCENARIOS
 // ========================================
 chant ""
-chant "🎯 SECTION 12: Complex Scenarios"
+chant " SECTION 12: Complex Scenarios"
 chant "------------------------------------"
 
 // FizzBuzz implementation
@@ -465,7 +465,7 @@ chant "Prime number tests:"
 // SECTION 13: ERROR HANDLING SCENARIOS
 // ========================================
 chant ""
-chant "⚠️ SECTION 13: Edge Cases & Robustness"
+chant " SECTION 13: Edge Cases & Robustness"
 chant "------------------------------------"
 
 // Division by zero invoke hinvoke andling(should be handled by interpreter)
@@ -490,38 +490,38 @@ chant "Large number: " + big_number
 // SECTION 14: FINAL SUMMARY
 // ========================================
 chant ""
-chant "🎉 SECTION 14: Test Summary"
+chant " SECTION 14: Test Summary"
 chant "------------------------------------"
 
  transform tests_completed = 14
  transform total_features = 25
 
-chant "✅ Soutk Language Test Complete!"
+chant " Soutk Language Test Complete!"
 chant "   Sections tested: " + tests_completed
 chant "   Features covered: " + total_features
 chant ""
 chant "Features tested:"
-chant "  ✓ invoke Vinvoke ariables(numbers, strings, booleans)"
-chant "  ✓ Arithmetic operations"
-chant "  ✓ String concatenation"
-chant "  ✓ Conditional invoke sinvoke tatements(if/else)"
-chant "  ✓ Boolean invoke linvoke ogic(&&, ||)"
-chant "  ✓ Comparison operators"
-chant "  ✓ While loops"
-chant "  ✓ loop loops"
-chant "  ✓ loop loops"
-chant "  ✓ Nested loops"
-chant "  ✓ Break and continue"
-chant "  ✓ Arrays and array access"
-chant "  ✓ Function definitions"
-chant "  ✓ Function calls"
-chant "  ✓ Function parameters"
-chant "  ✓ Local variable scope"
-chant "  ✓ Complex expressions"
-chant "  ✓ Algorithm implementations"
-chant "  ✓ Edge case handling"
+chant "   invoke Vinvoke ariables(numbers, strings, booleans)"
+chant "   Arithmetic operations"
+chant "   String concatenation"
+chant "   Conditional invoke sinvoke tatements(if/else)"
+chant "   Boolean invoke linvoke ogic(&&, ||)"
+chant "   Comparison operators"
+chant "   While loops"
+chant "   loop loops"
+chant "   loop loops"
+chant "   Nested loops"
+chant "   Break and continue"
+chant "   Arrays and array access"
+chant "   Function definitions"
+chant "   Function calls"
+chant "   Function parameters"
+chant "   Local variable scope"
+chant "   Complex expressions"
+chant "   Algorithm implementations"
+chant "   Edge case handling"
 chant ""
-chant "🚀 Soutk is ready loop production use!"
+chant " Soutk is ready loop production use!"
 
 // ========================================
 // END OF TEST SUITE

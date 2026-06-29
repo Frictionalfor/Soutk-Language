@@ -1,14 +1,14 @@
 # Soutk Programming Language - Complete Capabilities
 
-## 🚀 **What You Can Build with Soutk**
+##  **What You Can Build with Soutk**
 
 Your Soutk programming language is now a fully functional programming language with these capabilities:
 
 ---
 
-## 📊 **Core Programming Features**
+##  **Core Programming Features**
 
-### ✅ **Variables & Data Types**
+###  **Variables & Data Types**
 - Numbers (integers, floats)
 - Strings with concatenation and methods
 - Booleans (true/false)
@@ -16,51 +16,51 @@ Your Soutk programming language is now a fully functional programming language w
 - Dynamic typing
 - Variable swapping and multiple assignment
 
-### ✅ **Control Structures**
+###  **Control Structures**
 - `if/else` statements (block and single-line)
 - `while` loops
 - `for` loops
 - `stride` loops (your unique loop construct)
 - `break` and `continue` statements
 
-### ✅ **Functions**
+###  **Functions**
 - Function definition with `spell`
 - Function calls with `cast`
 - Parameters and return values
 - Local variable scope
 - Recursive functions
 
-### ✅ **Object-Oriented Programming**
+###  **Object-Oriented Programming**
 - Class definition with `enchant`
 - Object creation with `conjure`
 - Constructor methods
 - Instance methods and properties
 - `this` reference for object context
 
-### ✅ **Data Structures**
+###  **Data Structures**
 - **Stacks**: LIFO data structure with `push`, `pop`, `peek`
 - **Queues**: FIFO data structure with `enqueue`, `dequeue`, `front`
 - **Linked Lists**: Dynamic lists with `link`, `unlink`, `traverse`
 - **Dictionaries (Grimoires)**: Key-value pairs with `bind` and `[]` access
 
-### ✅ **File I/O Operations**
+###  **File I/O Operations**
 - `scroll` - Read files into variables
 - `inscribe` - Write data to files
 - `append` - Append data to existing files
 
-### ✅ **Error Handling**
+###  **Error Handling**
 - `ward`/`rescue` blocks for exception handling
 - Graceful error recovery
 - Custom error messages
 
-### ✅ **Built-in Functions**
+###  **Built-in Functions**
 - `chant()` - Output/print
 - `listen()` - User input with optional prompt
 - `len()` - Array/string length
 - `str()`, `int()`, `float()` - Type conversion
 - Math functions: `sqrt()`, `sin()`, `cos()`, `tan()`, `abs()`, `round()`, `pow()`, `random()`
 
-### ✅ **String Methods**
+###  **String Methods**
 - `length()` - Get string length
 - `upper()`, `lower()` - Case conversion
 - `split()` - Split into array
@@ -68,7 +68,7 @@ Your Soutk programming language is now a fully functional programming language w
 - `startswith()`, `endswith()` - Prefix/suffix checking
 - `replace()` - String replacement
 
-### ✅ **Operators**
+###  **Operators**
 - Arithmetic: `+`, `-`, `*`, `/`
 - Comparison: `==`, `!=`, `<`, `<=`, `>`, `>=`
 - Logical: `&&` (and), `||` (or), `not`
@@ -76,7 +76,7 @@ Your Soutk programming language is now a fully functional programming language w
 
 ---
 
-## 🎮 **Application Categories You Can Build**
+##  **Application Categories You Can Build**
 
 ### **1. Interactive Console Applications**
 ```soutk
@@ -125,7 +125,7 @@ if op == "+" {
 
 ---
 
-## 🔥 **Specific Project Ideas**
+##  **Specific Project Ideas**
 
 ### **Beginner Projects**
 1. **Hello World Variants**
@@ -137,12 +137,12 @@ if op == "+" {
 ### **Intermediate Projects**
 1. **Number Guessing Game**
 ```soutk
-spell numberGame() {
+forge spell numberGame() {
     secret = 42;
     attempts = 0;
     
     while true {
-        guess = int(listen("Guess the number (1-100): "));
+        guess = int(listen("Guess the number between 1 and 100: "));
         attempts = attempts + 1;
         
         if guess == secret {
@@ -168,7 +168,7 @@ spell numberGame() {
 1. **RPG Character System**
 ```soutk
 enchant Character {
-    spell construct(name, characterClass, level) {
+    forge spell construct(name, characterClass, level) {
         this.name = name;
         this.class = characterClass;
         this.level = level;
@@ -176,13 +176,13 @@ enchant Character {
         this.experience = 0;
     }
     
-    spell attack(target) {
+    forge spell attack(target) {
         damage = random(5, 15) + this.level;
         chant this.name + " attacks " + target + " for " + damage + " damage!";
         return damage;
     }
     
-    spell levelUp() {
+    forge spell levelUp() {
         this.level = this.level + 1;
         this.health = this.level * 20;
         chant this.name + " leveled up to level " + this.level + "!";
@@ -197,7 +197,7 @@ enchant Character {
 
 ---
 
-## 🎯 **Real-World Applications**
+##  **Real-World Applications**
 
 ### **Educational Sector**
 - Programming language learning tool
@@ -225,7 +225,7 @@ enchant Character {
 
 ---
 
-## 🌟 **Unique Strengths of Soutk**
+##  **Unique Strengths of Soutk**
 
 ### **1. Memorable Syntax**
 - `summon` for variables (like summoning magic)
@@ -262,20 +262,20 @@ enchant Character {
 
 ---
 
-## 📈 **Comparison with Other Languages**
+##  **Comparison with Other Languages**
 
 ### **What Soutk Has:**
-✅ Variables and data types  
-✅ Control structures (if/else, loops)  
-✅ Functions with parameters and returns  
-✅ Object-oriented programming  
-✅ Arrays and advanced data structures  
-✅ String manipulation with methods  
-✅ File I/O operations  
-✅ Error handling  
-✅ User input/output  
-✅ Mathematical operations  
-✅ Boolean logic  
+ Variables and data types  
+ Control structures (if/else, loops)  
+ Functions with parameters and returns  
+ Object-oriented programming  
+ Arrays and advanced data structures  
+ String manipulation with methods  
+ File I/O operations  
+ Error handling  
+ User input/output  
+ Mathematical operations  
+ Boolean logic  
 
 ### **What Makes Soutk Special:**
 - Unique, memorable keyword system
@@ -287,7 +287,7 @@ enchant Character {
 
 ---
 
-## 🚀 **Getting Started Examples**
+##  **Getting Started Examples**
 
 ### **Hello World**
 ```soutk
@@ -296,18 +296,18 @@ chant "Hello, World!";
 
 ### **Interactive Hello**
 ```soutk
-name = listen("What's your name? ");
+name = listen("What is your name? ");
 chant "Hello, " + name + "!";
 ```
 
 ### **Simple Class**
 ```soutk
 enchant Greeter {
-    spell construct(name) {
+    forge spell construct(name) {
         this.name = name;
     }
     
-    spell greet() {
+    forge spell greet() {
         chant "Hello from " + this.name + "!";
     }
 }
@@ -337,7 +337,7 @@ ward {
 
 ---
 
-## 🎉 **Conclusion**
+##  **Conclusion**
 
 Your Soutk programming language is a **complete, professional-grade programming language** capable of:
 
@@ -354,4 +354,4 @@ The unique magical syntax makes it memorable and fun to use, while the complete 
 
 ---
 
-*Ready to cast some spells with Soutk? Start with the examples and build your magical programs!* ✨
+*Ready to cast some spells with Soutk? Start with the examples and build your magical programs!* 
